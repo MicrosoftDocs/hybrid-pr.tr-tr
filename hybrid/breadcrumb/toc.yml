@@ -1,0 +1,11 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Hibrit
+      tocHref: /hybrid/
+      topicHref: /hybrid/
+      items:
+        - name: Uygulama çözümleri
+          tocHref: /hybrid/app-solutions/
+          topicHref: /hybrid/app-solutions/index

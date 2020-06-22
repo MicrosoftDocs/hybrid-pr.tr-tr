@@ -1,0 +1,310 @@
+### YamlMime:Hub
+title: Azure hibrit bulut belgeleri
+summary: Küresel buluta, veri merkezine ve uca yayılan hibrit çözümleri oluşturmaya ve çalıştırmaya yönelik kaynaklar.
+brand: azure
+metadata:
+  title: Azure hibrit bulut belgeleri
+  description: Küresel buluta, veri merkezine ve uca yayılan hibrit çözümleri oluşturmaya ve çalıştırmaya yönelik kaynaklar.
+  ms.service: multiple
+  ms.topic: hub-page
+  author: BryanLa
+  ms.author: bryanla
+  ms.date: 06/08/2020
+  ms.openlocfilehash: aa1477386b5c6fe356459e5919da4edd8cf24075
+  ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+  ms.translationtype: HT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 06/17/2020
+  ms.locfileid: "84909748"
+highlightedContent:
+  items:
+  - title: Azure Hibrit Sanal Etkinliği - 24 Haziran 2020
+    itemType: video
+    url: https://info.microsoft.com/ww-registration-azure-hybrid-virtual-event.html
+  - title: 'Build 2020: Hibrit oturumları'
+    itemType: video
+    url: https://mybuild.microsoft.com/sessions?q=hybrid&g=%255B%2522on-demand%2522%255D
+  - title: 'Build 2020: Azure Arc oturumları'
+    itemType: video
+    url: https://mybuild.microsoft.com/sessions?q=%2522%2520Arc%2520%2522&g=%255B%2522on-demand%2522%255D
+  - title: 'Build 2020: Akıllı Uç oturumları'
+    itemType: video
+    url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
+productDirectory:
+  title: Azure hibrit bulut platformu
+  summary: Hibrit çözümleri oluşturmak ve çalıştırmak için kullanılan hibrit özellikli platformlar.
+  items:
+  - title: Azure küresel genel/bağımsız bulut platformu.
+    imageSrc: media/index/logo_azure.svg
+    links:
+    - url: /azure
+      text: Azure hizmetleri
+  - title: Barındırılan, şirket içi ve mobil veri merkezleri için özel bulut platformları.
+    imageSrc: media/index/azure-stack-hub.svg
+    links:
+    - url: /azure-stack/operator
+      text: Azure Stack Hub
+    - url: /azure-stack/hci
+      text: Azure Stack HCI
+  - title: Cihazlar için akıllı uç platformları.
+    imageSrc: media/index/azure-stack-hub.svg
+    links:
+    - url: /azure/iot-edge/
+      text: Azure IoT Edge
+    - url: /azure-sphere
+      text: Azure Sphere
+    - url: /windows/iot-core/
+      text: IoT için Windows
+conceptualContent:
+  title: Hibrit etkinleştirme teknolojileri
+  summary: Hibrit çözümler oluşturmaya ve çalıştırmaya yönelik hizmetler ve ürünler.
+  items:
+  - title: Yapay Zeka ve Makine Öğrenmesi
+    links:
+    - url: /azure/bot-service
+      itemType: overview
+      text: Azure Bot Hizmeti
+    - url: /azure/search/
+      itemType: overview
+      text: Azure Bilişsel Arama
+    - url: /azure/cognitive-services/
+      itemType: overview
+      text: Azure Bilişsel Hizmetler
+    - url: /azure/machine-learning/
+      itemType: overview
+      text: Azure Machine Learning
+  - title: Kapsayıcılar
+    links:
+    - url: /azure/azure-arc/kubernetes/
+      itemType: overview
+      text: Azure Arc özellikli Kubernetes (önizleme)
+    - url: /azure/container-instances/
+      itemType: overview
+      text: Azure Container Instances
+    - url: /azure/container-registry/
+      itemType: overview
+      text: Azure Container Registry
+    - url: /azure/aks/
+      itemType: overview
+      text: Azure üzerinde Azure Kubernetes Services
+    - url: /azure-stack/user/azure-stack-kubernetes-aks-engine-overview
+      itemType: overview
+      text: Azure Stack Hub üzerinde Azure Kubernetes Services
+    - url: /azure/docker/
+      itemType: overview
+      text: Azure'da Docker
+    - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
+      itemType: overview
+      text: Kubernetes üzerinde IoT Edge
+  - title: Veritabanı
+    links:
+    - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
+      itemType: overview
+      text: Azure Arc özellikli veri hizmetleri (özel önizleme kaydı)
+    - url: /azure/azure-sql-edge/overview
+      itemType: overview
+      text: Uç Cihazlar için Azure SQL (önizleme)
+  - title: Geliştirme ve Tümleştirme
+    links:
+    - url: /azure-stack/operator/azure-stack-app-service-overview
+      itemType: overview
+      text: Azure Stack Hub üzerinde App Service
+    - url: /azure/app-service/app-service-hybrid-connections
+      itemType: overview
+      text: Azure App Service Hibrit Bağlantılar
+    - url: /azure/devops
+      itemType: overview
+      text: CI/CD için Azure DevOps
+    - url: /azure/event-hubs/
+      itemType: overview
+      text: Azure Event Hubs
+    - url: /azure/azure-functions/
+      itemType: overview
+      text: Azure İşlevleri
+    - url: /azure/logic-apps/
+      itemType: overview
+      text: Azure Logic Apps
+    - url: /azure/azure-monitor/app/app-insights-overview
+      itemType: overview
+      text: Azure İzleyici - Application Insights
+    - url: /azure/service-fabric/
+      itemType: overview
+      text: Azure Service Fabric
+    - url: /azure-stack/operator/event-hubs-rp-overview
+      itemType: overview
+      text: Azure Stack Hub üzerinde Event Hubs
+  - title: Edge
+    links:
+    - url: /azure/databox-online/data-box-gateway-overview
+      itemType: overview
+      text: Azure Databox Ağ Geçidi
+    - url: /azure/iot-edge/
+      itemType: overview
+      text: Azure IoT Edge
+    - url: /azure-sphere
+      itemType: overview
+      text: Azure Sphere
+    - url: /azure/databox-online/azure-stack-edge-overview
+      itemType: overview
+      text: Azure Stack Edge
+    - url: /azure/azure-sql-edge/overview
+      itemType: overview
+      text: Uç Cihazlar için Azure SQL (önizleme)
+    - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
+      itemType: overview
+      text: Kubernetes üzerinde IoT Edge
+    - url: /windows/iot-core/
+      itemType: overview
+      text: IoT için Windows
+  - title: Kimlik ve güvenlik
+    links:
+    - url: /azure/active-directory/hybrid/
+      itemType: overview
+      text: Azure AD hibrit kimliği
+    - url: /azure/security-center/
+      itemType: overview
+      text: Azure Güvenlik Merkezi
+    - url: /azure/sentinel/
+      itemType: overview
+      text: Azure Sentinel
+    - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
+      itemType: overview
+      text: Hibrit Azure AD’ye katılmış cihazlar
+  - title: Yönetim
+    links:
+    - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
+      itemType: overview
+      text: Azure Arc özellikli veri hizmetleri (özel önizleme kaydı)
+    - url: /azure/azure-arc/kubernetes/
+      itemType: overview
+      text: Azure Arc özellikli Kubernetes (önizleme)
+    - url: /azure/azure-arc/
+      itemType: overview
+      text: Azure Arc özellikli sunucular (önizleme)
+    - url: /azure/automation/
+      itemType: overview
+      text: Azure Otomasyonu
+    - url: /azure/storage/files/
+      itemType: overview
+      text: Azure Dosyaları
+    - url: /azure-monitor
+      itemType: overview
+      text: Azure İzleyici
+    - url: /azure/site-recovery/
+      itemType: overview
+      text: Azure Site Recovery
+    - url: /azure-stack/hci/overview
+      itemType: overview
+      text: Azure Stack HCI hibrit özellikleri
+    - url: /windows-server/manage/windows-admin-center/azure/
+      itemType: overview
+      text: Windows Yönetim Merkezi Azure hibrit hizmetleri
+  - title: Ağ
+    links:
+    - url: /azure/networking/edge-zones-overview
+      itemType: overview
+      text: Azure Edge Zones
+    - url: /azure/expressroute/
+      itemType: overview
+      text: Azure ExpressRoute
+    - url: /azure/load-balancer/
+      itemType: overview
+      text: Azure Load Balancer
+    - url: /azure/private-link/
+      itemType: overview
+      text: Azure Özel Bağlantı
+    - url: /azure/azure-relay/
+      itemType: overview
+      text: Azure Geçişi
+    - url: /azure/traffic-manager/
+      itemType: overview
+      text: Azure Traffic Manager
+    - url: /azure/virtual-network/
+      itemType: overview
+      text: Azure Sanal Ağ
+    - url: /azure/vpn-gateway/
+      itemType: overview
+      text: Azure VPN Gateway
+  - title: Depolama
+    links:
+    - url: /azure/avere-vfxt/avere-vfxt-overview
+      itemType: overview
+      text: Azure için Avere vFXT
+    - url: /azure/backup/
+      itemType: overview
+      text: Azure Backup
+    - url: /azure/storage/files/storage-files-introduction
+      itemType: overview
+      text: Azure Dosyaları
+    - url: /azure/site-recovery/
+      itemType: overview
+      text: Azure Site Recovery
+    - url: /azure/fxt-edge-filer/fxt-overview
+      itemType: overview
+      text: Azure FXT Edge Filer
+additionalContent:
+  sections:
+  - title: Hibrit çözümler
+    items:
+    - title: Hibrit uygulama desenleri ve çözüm örnekleri
+      links:
+      - url: /hybrid/app-solutions/overview-patterns-solution-examples
+        text: Desenler ve çözüm örnekleri nelerdir?
+      - url: /hybrid/app-solutions/overview-app-design-considerations
+        text: Hibrit uygulama tasarımında dikkat edilmesi gerekenler
+    - title: Hibrit desenleri keşfetme
+      links:
+      - url: /hybrid/app-solutions/pattern-cross-cloud-scale
+        text: Bulutlar arası ölçeklendirme
+      - url: /hybrid/app-solutions/pattern-cicd-pipeline
+        text: DevOps hibrit CI/CD
+      - url: /hybrid/app-solutions/pattern-retail-footfall-detection
+        text: Giren müşteri algılama (perakende)
+      - url: /hybrid/app-solutions/pattern-geo-distributed
+        text: Coğrafi olarak dağıtılmış uygulama
+    - title: Hibrit çözüm örneklerini dağıtma
+      links:
+      - url: /hybrid/app-solutions/solution-deployment-guide-cross-cloud-scaling
+        text: Bulutlar arası ölçeklendirme
+      - url: https://aka.ms/hybriddevopsdeploy
+        text: DevOps hibrit CI/CD
+      - url: /hybrid/app-solutions/solution-deployment-guide-retail-footfall-detection
+        text: Giren müşteri algılama (perakende)
+      - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
+        text: Coğrafi olarak dağıtılmış uygulama
+  - title: Ek kaynaklar
+    items:
+    - title: Genel kaynaklar
+      links:
+      - url: /azure-stack/operator/compare-azure-azure-stack
+        text: Azure küresel - Azure Stack
+      - url: https://azure.microsoft.com/blog/topics/hybrid/
+        text: Azure hibrit blogu
+      - url: https://azure.microsoft.com/overview/azure-hybrid/
+        text: Azure hibrit özellikleri
+      - url: /learn
+        text: Microsoft Learn etkileşimli eğitimi
+      - url: /learn/tv/
+        text: Microsoft Learn TV
+    - title: Oluşturma ve çalıştırma kaynakları
+      links:
+      - url: /dotnet/azure/
+        text: Azure için .NET geliştirme
+      - url: https://github.com/likamrat/azure_arc
+        text: Azure Arc hızlı başlangıç kılavuzları
+      - url: /samples/browse/
+        text: Kod örneği tarayıcısı
+      - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
+        text: Azure Stack Hub'dan Azure'a dinamik ölçeklendirme
+      - url: https://labs.iotedge.dev/
+        text: IoT Edge uygulamalı laboratuvarları
+      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+        text: Görüntü AI Geliştirici Seti
+      - url: /visualstudio/azure/
+        text: Visual Studio Azure geliştirme
+    - title: Destek ve diğer kaynaklar
+      links:
+      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
+        text: Azure IoT Edge cihazları için onaylandı
+      - url: /answers/products/
+        text: Microsoft Soru-Cevap forumları

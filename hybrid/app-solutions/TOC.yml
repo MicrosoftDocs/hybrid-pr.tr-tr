@@ -1,0 +1,74 @@
+- name: Azure Hibrit Belgeleri
+  href: index.yml
+- name: Genel Bakış
+  items:
+    - name: Hibrit desenler ve çözüm örnekleri
+      href: overview-patterns-solution-examples.md
+- name: Desenler
+  items:
+    - name: Tek
+      items:
+        - name: Bulutlar arası ölçeklendirme
+          href: pattern-cross-cloud-scale.md
+        - name: DevOps hibrit CI/CD
+          href: pattern-cicd-pipeline.md
+        - name: Coğrafi olarak dağıtılmış uygulama
+          href: pattern-geo-distributed.md
+        - name: Hibrit geçişi
+          href: pattern-hybrid-relay.md
+        - name: Katmanlı veriler
+          href: pattern-tiered-data-analytics.md
+        - name: ML modelini uçta eğitme
+          href: pattern-train-ml-model-at-edge.md
+    - name: Çoklu
+      items:
+        - name: Bulutlar arası ölçeklendirme (şirket içi veriler)
+          href: pattern-cross-cloud-scale-onprem-data.md
+        - name: Giren müşteri algılama (perakende)
+          href: pattern-retail-footfall-detection.md
+        - name: Uçta tükenen stok algılama
+          href: pattern-out-of-stock-at-edge.md
+- name: Çözüm dağıtımı kılavuzları
+  items:
+    - name: Bulutlar arası ölçeklendirme
+      href: solution-deployment-guide-cross-cloud-scaling.md
+    - name: Bulutlar arası ölçeklendirme (şirket içi veriler)
+      href: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+    - name: DevOps hibrit CI/CD
+      href: 'https://aka.ms/hybriddevopsdeploy'
+    - name: Giren müşteri algılama (perakende)
+      href: solution-deployment-guide-retail-footfall-detection.md
+    - name: Coğrafi olarak dağıtılmış uygulama
+      href: solution-deployment-guide-geo-distributed.md
+    - name: Karma bağlantı
+      href: solution-deployment-guide-connectivity.md
+    - name: Karma kimlik
+      href: solution-deployment-guide-identity.md
+    - name: Hibrit geçişi
+      href: 'https://aka.ms/hybridrelaydeployment'
+    - name: Katmanlı veriler
+      href: 'https://aka.ms/tiereddatadeploy'
+    - name: Yüksek kullanılabilirliğe sahip MongoDB
+      href: solution-deployment-guide-mongodb-ha.md
+    - name: Yüksek kullanılabilirliğe sahip SQL Server 2016
+      href: solution-deployment-guide-sql-ha.md
+    - name: Uçta tükenen stok
+      href: 'https://aka.ms/edgeinferencingdeploy'
+    - name: ML modellerini uçta eğitme
+      href: 'https://aka.ms/edgetrainingdeploy'
+- name: Kavramlar
+  items:
+    - name: Hibrit uygulama tasarımında dikkat edilmesi gerekenler
+      href: overview-app-design-considerations.md
+- name: İlgili
+  items:
+    - name: Azure belgeleri
+      href: /azure
+    - name: Azure Stack belgeleri
+      href: /azure-stack
+- name: Kaynaklar
+  items:
+    - name: Microsoft Learn
+      href: /learn
+    - name: Microsoft Soru-Cevap
+      href: /answers/products/

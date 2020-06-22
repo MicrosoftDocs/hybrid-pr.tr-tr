@@ -1,0 +1,72 @@
+### YamlMime:Landing
+title: Azure hibrit desenleri ve çözüm belgeleri
+summary: Uygulama geliştirmenizde hibrit desenler ve çözüm örneklerinden nasıl yararlanabileceğinizi öğrenin. Azure ve Azure Stack, bir akıllı bulut ve akıllı uç hizmetleri paketi üzerinde hibrit uygulamalar geliştirmeye olanak tanır.
+metadata:
+  title: Azure hibrit desenleri ve çözüm belgeleri
+  description: Uygulama geliştirmenizde hibrit desenler ve çözüm örneklerinden nasıl yararlanabileceğinizi öğrenin. Azure ve Azure Stack, bir akıllı bulut ve akıllı uç hizmetleri paketi üzerinde hibrit uygulamalar geliştirmeye olanak tanır.
+  ms.service: azure-stack
+  ms.topic: landing-page
+  author: BryanLa
+  ms.author: bryanla
+  ms.date: 10/31/2019
+  ms.openlocfilehash: 923e8aa2af78b5d23ba1f25d8b0eb5b80edc4f0a
+  ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+  ms.translationtype: HT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 06/17/2020
+  ms.locfileid: "84909766"
+landingContent:
+- title: Hibrit desenler ve çözümler hakkında
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Hibrit desenler ve çözüm örnekleri nelerdir?
+      url: overview-patterns-solution-examples.md
+  - linkListType: concept
+    links:
+    - text: Hibrit uygulama tasarımında dikkat edilmesi gerekenler
+      url: overview-app-design-considerations.md
+- title: Hibrit desenleri keşfetme
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Bulutlar arası ölçeklendirme
+      url: pattern-cross-cloud-scale.md
+    - text: DevOps hibrit CI/CD
+      url: pattern-cicd-pipeline.md
+    - text: Giren müşteri algılama (perakende)
+      url: pattern-retail-footfall-detection.md
+    - text: Coğrafi olarak dağıtılmış uygulama
+      url: pattern-geo-distributed.md
+- title: Hibrit çözüm örneklerini dağıtma
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Bulutlar arası ölçeklendirme
+      url: solution-deployment-guide-cross-cloud-scaling.md
+    - text: DevOps hibrit CI/CD
+      url: https://aka.ms/hybriddevopsdeploy
+    - text: Giren müşteri algılama (perakende)
+      url: solution-deployment-guide-retail-footfall-detection.md
+    - text: Coğrafi olarak dağıtılmış uygulama
+      url: solution-deployment-guide-geo-distributed.md
+- title: Perakende giren müşteri algılama senaryosu
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Desen
+      url: pattern-retail-footfall-detection.md
+  - linkListType: tutorial
+    links:
+    - text: Çözüm dağıtımı kılavuzu
+      url: solution-deployment-guide-retail-footfall-detection.md
+- title: Şirket içi verileri kullanarak bulutlar arası ölçeklendirme senaryosu
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Desen
+      url: pattern-cross-cloud-scale-onprem-data.md
+  - linkListType: tutorial
+    links:
+    - text: Çözüm dağıtımı kılavuzu
+      url: solution-deployment-guide-cross-cloud-scaling-onprem-data.md

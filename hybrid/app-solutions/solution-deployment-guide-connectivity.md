@@ -30,7 +30,7 @@ Bu çözümde, aşağıdakileri yapmak için bir örnek ortam oluşturacaksını
 > 
 > [Karma uygulama tasarımı ile ilgili önemli noktalar](overview-app-design-considerations.md) , karma uygulamalar tasarlamak, dağıtmak ve çalıştırmak için yazılım kalitesinin (yerleştirme, ölçeklenebilirlik, kullanılabilirlik, dayanıklılık, yönetilebilirlik ve güvenlik) aynı şekilde gözden geçirmeleri inceler. Tasarım konuları karma uygulama tasarımını iyileştirirken, üretim ortamlarındaki zorlukları en aza indirmeyle ilgili olarak size yardımcı olur.
 
-## <a name="prerequisites"></a>Ön koşullar
+## <a name="prerequisites"></a>Önkoşullar
 
 Karma bağlantı dağıtımı oluşturmak için birkaç bileşen gereklidir. Bu bileşenlerden bazılarının hazırlanması zaman alabilir, bu nedenle plana göre plan yapın.
 
@@ -39,7 +39,7 @@ Karma bağlantı dağıtımı oluşturmak için birkaç bileşen gereklidir. Bu 
 - Azure aboneliğiniz yoksa başlamadan önce [ücretsiz bir hesap](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) oluşturun.
 - Azure 'da bir [Web uygulaması](https://docs.microsoft.com/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?view=vsts&tabs=vsts) oluşturun. Çözümde gerekli olacak Web uygulaması URL 'sini unutmayın.
 
-### <a name="azure-stack-hub"></a>Azure Stack hub 'ı
+### <a name="azure-stack-hub"></a>Azure Stack Hub
 
 Azure OEM/donanım ortağı bir üretim Azure Stack hub 'ını dağıtabilir ve tüm kullanıcılar bir Azure Stack Geliştirme Seti (ASDK) dağıtabilir.
 

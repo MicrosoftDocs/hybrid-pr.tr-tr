@@ -35,7 +35,7 @@ Bu çözümde, aşağıdakileri yapmak için bir örnek ortam oluşturacaksını
 > 
 > [Karma uygulama tasarımı ile ilgili önemli noktalar](overview-app-design-considerations.md) , karma uygulamalar tasarlamak, dağıtmak ve çalıştırmak için yazılım kalitesinin (yerleştirme, ölçeklenebilirlik, kullanılabilirlik, dayanıklılık, yönetilebilirlik ve güvenlik) aynı şekilde gözden geçirmeleri inceler. Tasarım konuları karma uygulama tasarımını iyileştirirken, üretim ortamlarındaki zorlukları en aza indirmeyle ilgili olarak size yardımcı olur.
 
-## <a name="prerequisites"></a>Ön koşullar
+## <a name="prerequisites"></a>Önkoşullar
 
 - Azure aboneliği. Gerekirse, başlamadan önce [ücretsiz bir hesap](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) oluşturun.
 - Azure Stack hub tümleşik sistemi veya Azure Stack Geliştirme Seti dağıtımı (ASDK).
@@ -64,7 +64,7 @@ Yerel olarak dağıtılan uygulamaların şirket içi donanım yapılandırması
 
 Platformlar arası çözüm, ortamlar arasında sorunsuz yönetim ve tanıdık arabirim sağlar. Platformlar arası yönetim için PowerShell önerilir.
 
-## <a name="cross-cloud-scaling"></a>Platformlar arası ölçeklendirme
+## <a name="cross-cloud-scaling"></a>Bulutlar arası ölçeklendirme
 
 ### <a name="get-a-custom-domain-and-configure-dns"></a>Özel etki alanı edinme ve DNS 'yi yapılandırma
 

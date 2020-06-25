@@ -9,13 +9,13 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 06/19/2020
-  ms.openlocfilehash: 4d2cd89f0375031c25820509290f4fe9336d0ca4
-  ms.sourcegitcommit: 058c7d4366cd015b8c5fbcba012f9e74be9f81cc
+  ms.date: 06/23/2020
+  ms.openlocfilehash: 07c1f66901ca5cfeb1fba10f4ae256a727fe9aed
+  ms.sourcegitcommit: 7e1ffd9825fce79d1d3972c0dfd0adc25f4adc0a
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 06/19/2020
-  ms.locfileid: "85111284"
+  ms.lasthandoff: 06/23/2020
+  ms.locfileid: "85289525"
 highlightedContent:
   items:
   - title: Azure Hibrit Sanal Etkinliği - 24 Haziran 2020
@@ -281,10 +281,10 @@ additionalContent:
       links:
       - url: /azure-stack/operator/compare-azure-azure-stack
         text: Azure küresel - Azure Stack
-      - url: https://azure.microsoft.com/blog/topics/hybrid/
-        text: Azure hibrit blogu
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Azure hibrit özellikleri
+      - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
+        text: Müşterilerin hibrit bulut hikayeleri
       - url: /learn
         text: Microsoft Learn etkileşimli eğitimi
       - url: /learn/tv/
@@ -295,6 +295,8 @@ additionalContent:
         text: Azure için .NET geliştirme
       - url: https://github.com/likamrat/azure_arc
         text: Azure Arc hızlı başlangıç kılavuzları
+      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
+        text: Azure IoT Edge cihazları için onaylandı
       - url: /samples/browse/
         text: Kod örneği tarayıcısı
       - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
@@ -307,7 +309,7 @@ additionalContent:
         text: Visual Studio Azure geliştirme
     - title: Destek ve diğer kaynaklar
       links:
-      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-        text: Azure IoT Edge cihazları için onaylandı
+      - url: https://azure.microsoft.com/blog/topics/hybrid/
+        text: Azure hibrit blogu
       - url: /answers/products/
         text: Microsoft Soru-Cevap forumları

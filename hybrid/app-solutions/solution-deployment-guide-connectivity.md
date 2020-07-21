@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 0e1a0fc4fb4110fdb406d4b4b2e72abb8f5412c9
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 16c5d7820e8c865a9f88cb00da5cc7c854379414
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911851"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477295"
 ---
 # <a name="configure-hybrid-cloud-connectivity-using-azure-and-azure-stack-hub"></a>Azure ve Azure Stack hub kullanarak hibrit bulut bağlantısı yapılandırma
 
@@ -30,14 +30,14 @@ Bu çözümde, aşağıdakileri yapmak için bir örnek ortam oluşturacaksını
 > 
 > [Karma uygulama tasarımı ile ilgili önemli noktalar](overview-app-design-considerations.md) , karma uygulamalar tasarlamak, dağıtmak ve çalıştırmak için yazılım kalitesinin (yerleştirme, ölçeklenebilirlik, kullanılabilirlik, dayanıklılık, yönetilebilirlik ve güvenlik) aynı şekilde gözden geçirmeleri inceler. Tasarım konuları karma uygulama tasarımını iyileştirirken, üretim ortamlarındaki zorlukları en aza indirmeyle ilgili olarak size yardımcı olur.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Ön koşullar
 
 Karma bağlantı dağıtımı oluşturmak için birkaç bileşen gereklidir. Bu bileşenlerden bazılarının hazırlanması zaman alabilir, bu nedenle plana göre plan yapın.
 
 ### <a name="azure"></a>Azure
 
 - Azure aboneliğiniz yoksa başlamadan önce [ücretsiz bir hesap](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) oluşturun.
-- Azure 'da bir [Web uygulaması](https://docs.microsoft.com/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?view=vsts&tabs=vsts) oluşturun. Çözümde gerekli olacak Web uygulaması URL 'sini unutmayın.
+- Azure 'da bir [Web uygulaması](/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?tabs=vsts&view=vsts) oluşturun. Çözümde gerekli olacak Web uygulaması URL 'sini unutmayın.
 
 ### <a name="azure-stack-hub"></a>Azure Stack Hub
 
@@ -69,7 +69,7 @@ Karma bulut bağlantısını yapılandırmaya başlamadan önce aşağıdaki öl
 
 #### <a name="solution-example-values"></a>Çözüm örneği değerleri
 
-Bu çözümdeki örnekler aşağıdaki değerleri kullanır. Bu değerleri kullanarak bir test ortamı oluşturabilir veya örnekleri daha iyi anlamak için bunlara başvurabilirsiniz. VPN Gateway ayarları hakkında daha fazla bilgi için bkz. [VPN Gateway ayarları](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
+Bu çözümdeki örnekler aşağıdaki değerleri kullanır. Bu değerleri kullanarak bir test ortamı oluşturabilir veya örnekleri daha iyi anlamak için bunlara başvurabilirsiniz. VPN Gateway ayarları hakkında daha fazla bilgi için bkz. [VPN Gateway ayarları](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
 
 Bağlantı belirtimleri:
 
@@ -84,7 +84,7 @@ Bağlantı belirtimleri:
 
 Ağ ve alt ağ IP adresleri:
 
-| Azure/Azure Stack Hub bağlantısı | Name | Alt ağ | IP Adresi |
+| Azure/Azure Stack Hub bağlantısı | Ad | Alt ağ | IP Adresi |
 |---|---|---|---|
 | Azure vNet | ApplicationvNet<br>10.100.102.9/23 | ApplicationSubnet<br>10.100.102.0/24 |  |
 |  |  | GatewaySubnet<br>10.100.103.0/24 |  |
@@ -99,7 +99,7 @@ Ağ ve alt ağ IP adresleri:
 
 ## <a name="create-a-virtual-network-in-global-azure-and-azure-stack-hub"></a>Küresel Azure ve Azure Stack hub 'da bir sanal ağ oluşturma
 
-Portalı kullanarak bir sanal ağ oluşturmak için aşağıdaki adımları kullanın. Bu makaleyi yalnızca bir çözüm olarak kullanıyorsanız bu [örnek değerleri](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal#values) kullanabilirsiniz. Bu makaleyi bir üretim ortamını yapılandırmak için kullanıyorsanız, örnek ayarlarını kendi değerlerinizle değiştirin.
+Portalı kullanarak bir sanal ağ oluşturmak için aşağıdaki adımları kullanın. Bu makaleyi yalnızca bir çözüm olarak kullanıyorsanız bu [örnek değerleri](/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal#values) kullanabilirsiniz. Bu makaleyi bir üretim ortamını yapılandırmak için kullanıyorsanız, örnek ayarlarını kendi değerlerinizle değiştirin.
 
 > [!IMPORTANT]
 > Azure veya Azure Stack hub vNet adres alanlarında IP adreslerinden bir çakışma olmadığından emin olmanız gerekir.
@@ -212,4 +212,4 @@ Bağlantıyı, sanal ağ geçidinin **Bağlantılar** sayfasında görebilirsini
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Azure bulut desenleri hakkında daha fazla bilgi edinmek için bkz. [bulut tasarım desenleri](https://docs.microsoft.com/azure/architecture/patterns).
+- Azure bulut desenleri hakkında daha fazla bilgi edinmek için bkz. [bulut tasarım desenleri](/azure/architecture/patterns).

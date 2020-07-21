@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 6913cc522da447092dad0af24e148a3b2576495c
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 5f2e18e164e54f60b1bb7a14026a0c75c7d7ce69
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911863"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477176"
 ---
 # <a name="deploy-an-ai-based-footfall-detection-solution-using-azure-and-azure-stack-hub"></a>Azure ve Azure Stack hub kullanarak bir AI tabanlı bir kantfall algılama çözümü dağıtma
 
@@ -44,7 +44,7 @@ Bu dağıtım kılavuzunu kullanmaya başlamadan önce şunları yaptığınızd
 - Dizininizde iki hizmet sorumlusu oluşturun:
   - Azure abonelik kapsamında erişim ile Azure kaynaklarıyla kullanılmak üzere ayarlanmış bir.
   - Azure Stack hub kaynaklarıyla kullanılmak üzere, Azure Stack hub aboneliği kapsamında erişimli bir kurulum.
-  - Hizmet sorumluları oluşturma ve erişimi yetkilendirme hakkında daha fazla bilgi edinmek için bkz. [kaynaklara erişmek için uygulama kimliği kullanma](/azure-stack/operator/azure-stack-create-service-principals.md). Azure CLı 'yı kullanmayı tercih ediyorsanız bkz. Azure [CLI Ile Azure hizmet sorumlusu oluşturma](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
+  - Hizmet sorumluları oluşturma ve erişimi yetkilendirme hakkında daha fazla bilgi edinmek için bkz. [kaynaklara erişmek için uygulama kimliği kullanma](/azure-stack/operator/azure-stack-create-service-principals.md). Azure CLı 'yı kullanmayı tercih ediyorsanız bkz. Azure [CLI Ile Azure hizmet sorumlusu oluşturma](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
 - Azure bilişsel hizmetler 'i Azure 'da veya Azure Stack hub 'da dağıtın.
   - İlk olarak bilişsel [Hizmetler hakkında daha fazla bilgi edinin](https://azure.microsoft.com/services/cognitive-services/).
   - Daha sonra, Azure bilişsel [Hizmetler 'i Azure Stack hub 'A dağıtmayı](/azure-stack/user/azure-stack-solution-template-cognitive-services.md) , bilişsel hizmetler 'ı Azure Stack hub 'a dağıtmak Önce önizlemeye erişim için kaydolmanız gerekir.

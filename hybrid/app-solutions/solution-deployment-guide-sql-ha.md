@@ -7,16 +7,16 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ff6d5b9667e63a6b8d232b6dd93db2d8b12fd46d
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 85b859457b9b54a973c5fc23329b927212b60a07
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911924"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477091"
 ---
 # <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>Azure ve Azure Stack hub 'a SQL Server 2016 kullanılabilirlik grubu dağıtma
 
-Bu makalede, iki Azure Stack hub ortamında zaman uyumsuz olağanüstü durum kurtarma (DR) sitesiyle temel yüksek kullanılabilirliğe sahip (HA) SQL Server 2016 kurumsal kümesinin otomatik dağıtımı adım adım gösterilir. SQL Server 2016 ve yüksek kullanılabilirlik hakkında daha fazla bilgi edinmek için bkz. [Always on kullanılabilirlik grupları: yüksek kullanılabilirlik ve olağanüstü durum kurtarma çözümü](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
+Bu makalede, iki Azure Stack hub ortamında zaman uyumsuz olağanüstü durum kurtarma (DR) sitesiyle temel yüksek kullanılabilirliğe sahip (HA) SQL Server 2016 kurumsal kümesinin otomatik dağıtımı adım adım gösterilir. SQL Server 2016 ve yüksek kullanılabilirlik hakkında daha fazla bilgi edinmek için bkz. [Always on kullanılabilirlik grupları: yüksek kullanılabilirlik ve olağanüstü durum kurtarma çözümü](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
 
 Bu çözümde, aşağıdakileri yapmak için bir örnek ortam oluşturacaksınız:
 
@@ -40,9 +40,9 @@ Bu çözümde, aşağıdakileri yapmak için bir örnek ortam oluşturacaksını
 - İki bağlı Azure Stack hub tümleşik sistemi (Azure Stack hub). Bu dağıtım Azure Stack Geliştirme Seti (ASDK) üzerinde çalışmıyor. Azure Stack hub 'ı hakkında daha fazla bilgi için bkz. [Azure Stack genel bakış](https://azure.microsoft.com/overview/azure-stack/).
 - Her Azure Stack hub 'ında kiracı aboneliği.
   - **Her bir Azure Stack Hub için her abonelik KIMLIĞINI ve Azure Resource Manager uç noktasını bir yere unutmayın.**
-- Her bir Azure Stack hub 'ındaki kiracı aboneliğine yönelik izinlere sahip bir Azure Active Directory (Azure AD) hizmet sorumlusu. Azure Stack hub 'Ları farklı Azure AD Kiracılarına karşı dağıtılırsa iki hizmet sorumlusu oluşturmanız gerekebilir. Azure Stack Hub için hizmet sorumlusu oluşturma hakkında bilgi edinmek için bkz. [uygulamalara Azure Stack hub kaynaklarına erişim sağlamak için hizmet sorumluları oluşturma](https://docs.microsoft.com/azure-stack/user/azure-stack-create-service-principals).
+- Her bir Azure Stack hub 'ındaki kiracı aboneliğine yönelik izinlere sahip bir Azure Active Directory (Azure AD) hizmet sorumlusu. Azure Stack hub 'Ları farklı Azure AD Kiracılarına karşı dağıtılırsa iki hizmet sorumlusu oluşturmanız gerekebilir. Azure Stack Hub için hizmet sorumlusu oluşturma hakkında bilgi edinmek için bkz. [uygulamalara Azure Stack hub kaynaklarına erişim sağlamak için hizmet sorumluları oluşturma](/azure-stack/user/azure-stack-create-service-principals).
   - **Her bir hizmet sorumlusunun uygulama KIMLIĞI, gizli anahtar ve kiracı adını (xxxxx.onmicrosoft.com) bir yere unutmayın.**
-- SQL Server 2016 Enterprise her bir Azure Stack hub 'ının Market 'e göre dağıtılmış. Market dağıtımı hakkında daha fazla bilgi için bkz. [Market öğelerini Azure Stack hub 'ına indirme](https://docs.microsoft.com/azure-stack/operator/azure-stack-download-azure-marketplace-item).
+- SQL Server 2016 Enterprise her bir Azure Stack hub 'ının Market 'e göre dağıtılmış. Market dağıtımı hakkında daha fazla bilgi için bkz. [Market öğelerini Azure Stack hub 'ına indirme](/azure-stack/operator/azure-stack-download-azure-marketplace-item).
     **Kuruluşunuzun uygun SQL lisanslarına sahip olduğundan emin olun.**
 - Yerel makinenizde yüklü [Docker for Windows](https://docs.docker.com/docker-for-windows/) .
 
@@ -105,6 +105,6 @@ Her dağıtım için Docker görüntüleri farklı Azure PowerShell sürümleri 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Küme üzerinde el ile yük devretmek için SQL Server Management Studio kullanın. Bkz. [Always on kullanılabilirlik grubunun Zorlanmış El Ile yük devretmesini gerçekleştirme (SQL Server)](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)
+- Küme üzerinde el ile yük devretmek için SQL Server Management Studio kullanın. Bkz. [Always on kullanılabilirlik grubunun Zorlanmış El Ile yük devretmesini gerçekleştirme (SQL Server)](/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)
 - Hibrit bulut uygulamaları hakkında daha fazla bilgi edinin. Bkz [. karma bulut çözümleri.](https://aka.ms/azsdevtutorials)
 - Kendi verilerinizi kullanın veya [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns)'da bu örnekteki kodu değiştirin.

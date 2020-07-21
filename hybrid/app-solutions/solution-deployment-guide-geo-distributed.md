@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 8f2b7e48a62896acfce7293dcd4f18d5a43add01
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 741ddf2c3ed234788af359dd233f6a656fbea13c
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84912044"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477363"
 ---
 # <a name="direct-traffic-with-a-geo-distributed-app-using-azure-and-azure-stack-hub"></a>Azure ve Azure Stack hub kullanarak coğrafi olarak dağıtılmış bir uygulamayla doğrudan trafik
 
@@ -52,7 +52,7 @@ Dağıtılmış bir uygulama ayak izi oluşturmadan önce, aşağıdaki şeyleri
 
 - **Uygulama Için özel etki alanı:** Müşterilerin uygulamaya erişmek için kullanacağı özel etki alanı adı nedir? Örnek uygulama için, özel etki alanı adı *www \. scalableasedemo.com* ' dir.
 
-- **Traffic Manager etki alanı:** Bir [Azure Traffic Manager profili](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-manage-profiles)oluştururken bir etki alanı adı seçilir. Bu ad, Traffic Manager tarafından yönetilen bir etki alanı girdisini kaydetmek için *trafficmanager.net* sonekiyle birleştirilir. Örnek uygulama için, seçilen ad *ölçeklenebilir-Ao-demo*' dir. Sonuç olarak, Traffic Manager tarafından yönetilen tam etki alanı adı *Scalable-ASE-demo.trafficmanager.net*' dir.
+- **Traffic Manager etki alanı:** Bir [Azure Traffic Manager profili](/azure/traffic-manager/traffic-manager-manage-profiles)oluştururken bir etki alanı adı seçilir. Bu ad, Traffic Manager tarafından yönetilen bir etki alanı girdisini kaydetmek için *trafficmanager.net* sonekiyle birleştirilir. Örnek uygulama için, seçilen ad *ölçeklenebilir-Ao-demo*' dir. Sonuç olarak, Traffic Manager tarafından yönetilen tam etki alanı adı *Scalable-ASE-demo.trafficmanager.net*' dir.
 
 - **Uygulama parmak izini ölçeklendirmeye yönelik strateji:** Uygulama parmak izin tek bir bölgede, birden çok bölgede veya her iki yaklaşımın bir karışımında birden çok App Service ortamına dağıtılıp dağıtılmayacağına karar verin. Karar, müşteri trafiğinin nereden kaynaklanacaktır ve bir uygulamanın destekleme arka uç altyapısının ne kadar iyi ölçeklendirilebileceğine ilişkin beklentileri temel almalıdır. Örneğin, %100 durum bilgisi içermeyen bir uygulamayla, Azure bölgesi başına birden çok App Service ortamının bir birleşimi kullanılarak, birden fazla Azure bölgesinde dağıtılan App Service ortamları ile çarpılarak bir uygulama daha büyük bir şekilde ölçeklendirilebilir. Üzerinde seçim yapabileceğiniz 15 + küresel Azure bölgesi sayesinde müşteriler gerçek anlamda dünya genelinde bir hiper ölçekli uygulama ayak izi oluşturabilir. Burada kullanılan örnek uygulama için, tek bir Azure bölgesinde üç App Service ortamı oluşturulmuştur (Orta Güney ABD).
 
@@ -84,7 +84,7 @@ Bir Azure aboneliği ve Azure Stack hub yüklemesi gereklidir.
 
 ### <a name="obtain-a-custom-domain-and-configure-dns"></a>Özel etki alanı edinme ve DNS 'yi yapılandırma
 
-Etki alanı için DNS bölge dosyasını güncelleştirin. Daha sonra Azure AD, özel etki alanı adının sahipliğini doğrulayabilirler. Azure 'da Azure/Office 365/dış DNS kayıtları için [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal) kullanın veya DNS girişini [farklı bir DNS kaydedicisinde](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)ekleyin.
+Etki alanı için DNS bölge dosyasını güncelleştirin. Daha sonra Azure AD, özel etki alanı adının sahipliğini doğrulayabilirler. Azure 'da Azure/Office 365/dış DNS kayıtları için [Azure DNS](/azure/dns/dns-getstarted-portal) kullanın veya DNS girişini [farklı bir DNS kaydedicisinde](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)ekleyin.
 
 1. Özel bir etki alanını ortak bir kayıt defteri ile kaydedin.
 
@@ -113,7 +113,7 @@ Web uygulamasını Azure 'a ve Azure Stack hub 'a dağıtmak için karma sürekl
 
 ### <a name="create-web-app-deployment-in-both-clouds"></a>Her iki bulutta Web uygulaması dağıtımı oluşturma
 
-1. **WebApplication. csproj** dosyasını düzenleyin: seçin `Runtimeidentifier` ve ekleyin `win10-x64` . (Bkz. [kendi Içinde dağıtım](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) belgeleri.)
+1. **WebApplication. csproj** dosyasını düzenleyin: seçin `Runtimeidentifier` ve ekleyin `win10-x64` . (Bkz. [kendi Içinde dağıtım](/dotnet/core/deploying/deploy-with-vs#simpleSelf) belgeleri.)
 
     ![Visual Studio 'da Web uygulaması proje dosyasını düzenleme](media/solution-deployment-guide-geo-distributed/image3.png)
 
@@ -129,7 +129,7 @@ Web uygulamasını Azure 'a ve Azure Stack hub 'a dağıtmak için karma sürekl
 
     ![Azure Pipelines içindeki derleme tanımına kod ekleme](media/solution-deployment-guide-geo-distributed/image4.png)
 
-3. **Derlemeyi çalıştırın**. [Kendi içinde çalışan dağıtım oluşturma](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) Işlemi, Azure 'da ve Azure Stack hub 'da çalışabilecek yapıtları yayımlar.
+3. **Derlemeyi çalıştırın**. [Kendi içinde çalışan dağıtım oluşturma](/dotnet/core/deploying/deploy-with-vs#simpleSelf) Işlemi, Azure 'da ve Azure Stack hub 'da çalışabilecek yapıtları yayımlar.
 
 #### <a name="using-an-azure-hosted-agent"></a>Azure barındırılan Aracısı kullanma
 
@@ -229,11 +229,11 @@ Azure DevOps Services, yayınlar için geliştirme, hazırlık, QA ve üretim or
 21. Tüm değişiklikleri kaydedin.
 
 > [!Note]  
-> Görevler için bazı ayarlar, bir şablondan bir yayın tanımı oluşturulurken otomatik olarak [ortam değişkenleri](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables) olarak tanımlanabilir. Bu ayarlar görev ayarlarında değiştirilemez; Bunun yerine, bu ayarları düzenlemek için üst ortam öğesinin seçilmesi gerekir.
+> Görevler için bazı ayarlar, bir şablondan bir yayın tanımı oluşturulurken otomatik olarak [ortam değişkenleri](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) olarak tanımlanabilir. Bu ayarlar görev ayarlarında değiştirilemez; Bunun yerine, bu ayarları düzenlemek için üst ortam öğesinin seçilmesi gerekir.
 
 ## <a name="part-2-update-web-app-options"></a>2. Bölüm: Web uygulaması seçeneklerini güncelleştirme
 
-[Azure App Service](https://docs.microsoft.com/azure/app-service/overview), yüksek oranda ölçeklenebilen, kendi kendine düzeltme eki uygulayan bir web barındırma hizmeti sunar.
+[Azure App Service](/azure/app-service/overview), yüksek oranda ölçeklenebilen, kendi kendine düzeltme eki uygulayan bir web barındırma hizmeti sunar.
 
 ![Azure App Service](media/solution-deployment-guide-geo-distributed/image27.png)
 
@@ -246,17 +246,17 @@ Azure DevOps Services, yayınlar için geliştirme, hazırlık, QA ve üretim or
 > [!Note]  
 > Kök etki alanı dışındaki tüm özel DNS adları için CNAME kullanın (örneğin, northwind.com).
 
-Canlı siteyi ve onun DNS etki alanı adını App Service'e geçirmek için, bkz. [Etkin DNS adını Azure App Service'e geçirme](https://docs.microsoft.com/azure/app-service/manage-custom-dns-migrate-domain).
+Canlı siteyi ve onun DNS etki alanı adını App Service'e geçirmek için, bkz. [Etkin DNS adını Azure App Service'e geçirme](/azure/app-service/manage-custom-dns-migrate-domain).
 
 ### <a name="prerequisites"></a>Ön koşullar
 
 Bu çözümü gerçekleştirmek için:
 
-- [App Service bir uygulama oluşturun](https://docs.microsoft.com/azure/app-service/)veya başka bir çözüm için oluşturulmuş bir uygulama kullanın.
+- [App Service bir uygulama oluşturun](/azure/app-service/)veya başka bir çözüm için oluşturulmuş bir uygulama kullanın.
 
 - Etki alanı adı satın alıp etki alanı sağlayıcısı için DNS kayıt defterine erişim sağlayın.
 
-Etki alanı için DNS bölge dosyasını güncelleştirin. Azure AD, özel etki alanı adının sahipliğini doğrulayacaktır. Azure 'da Azure/Office 365/dış DNS kayıtları için [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal) kullanın veya DNS girişini [farklı bir DNS kaydedicisinde](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)ekleyin.
+Etki alanı için DNS bölge dosyasını güncelleştirin. Azure AD, özel etki alanı adının sahipliğini doğrulayacaktır. Azure 'da Azure/Office 365/dış DNS kayıtları için [Azure DNS](/azure/dns/dns-getstarted-portal) kullanın veya DNS girişini [farklı bir DNS kaydedicisinde](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)ekleyin.
 
 - Özel bir etki alanını ortak bir kayıt defteri ile kaydedin.
 
@@ -267,14 +267,14 @@ Etki alanı için DNS bölge dosyasını güncelleştirin. Azure AD, özel etki 
 Örneğin, northwindcloud.com ve www northwindcloud.com için DNS girişleri eklemek için \. , northwindcloud.com kök etki alanı IÇIN DNS ayarlarını yapılandırın.
 
 > [!Note]  
-> [Azure Portal](https://docs.microsoft.com/azure/app-service/manage-custom-dns-buy-domain)kullanarak bir etki alanı adı satın alınabilir. Özel DNS adını web uygulamasına eşlemek için, web uygulamasının [App Service planı](https://azure.microsoft.com/pricing/details/app-service/) ücretli bir katmanda (**Paylaşılan**, **Temel**, **Standart** veya **Premium** olmalıdır).
+> [Azure Portal](/azure/app-service/manage-custom-dns-buy-domain)kullanarak bir etki alanı adı satın alınabilir. Özel DNS adını web uygulamasına eşlemek için, web uygulamasının [App Service planı](https://azure.microsoft.com/pricing/details/app-service/) ücretli bir katmanda (**Paylaşılan**, **Temel**, **Standart** veya **Premium** olmalıdır).
 
 ### <a name="create-and-map-cname-and-a-records"></a>CNAME ve A kayıtlarını oluşturma ve eşleme
 
 #### <a name="access-dns-records-with-domain-provider"></a>Etki alanı sağlayıcısı ile DNS kayıtlarına erişme
 
 > [!Note]  
->  Azure Web Apps için özel bir DNS adı yapılandırmak üzere Azure DNS kullanın. Daha fazla bilgi için bkz. [Bir Azure hizmeti için özel etki alanı ayarları sağlamak üzere Azure DNS'yi kullanma](https://docs.microsoft.com/azure/dns/dns-custom-domain).
+>  Azure Web Apps için özel bir DNS adı yapılandırmak üzere Azure DNS kullanın. Daha fazla bilgi için bkz. [Bir Azure hizmeti için özel etki alanı ayarları sağlamak üzere Azure DNS'yi kullanma](/azure/dns/dns-custom-domain).
 
 1. Ana sağlayıcının web sitesinde oturum açın.
 
@@ -355,14 +355,14 @@ Bu bölümde şunları göndereceğiz:
 > - SSL sertifikası bağlamasını betiklerle otomatikleştirin.
 
 > [!Note]  
-> Gerekirse, Azure portal bir müşteri SSL sertifikası alın ve Web uygulamasına bağlayın. Daha fazla bilgi için [App Service sertifikaları öğreticisine](https://docs.microsoft.com/azure/app-service/web-sites-purchase-ssl-web-site)bakın.
+> Gerekirse, Azure portal bir müşteri SSL sertifikası alın ve Web uygulamasına bağlayın. Daha fazla bilgi için [App Service sertifikaları öğreticisine](/azure/app-service/web-sites-purchase-ssl-web-site)bakın.
 
 ### <a name="prerequisites"></a>Ön koşullar
 
 Bu çözümü gerçekleştirmek için:
 
-- [App Service uygulaması oluşturun.](https://docs.microsoft.com/azure/app-service/)
-- [Özel bir DNS adını Web uygulamanıza eşleyin.](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain)
+- [App Service uygulaması oluşturun.](/azure/app-service/)
+- [Özel bir DNS adını Web uygulamanıza eşleyin.](/azure/app-service/app-service-web-tutorial-custom-domain)
 - Güvenilir bir sertifika yetkilisinden SSL sertifikası alın ve bu anahtarı kullanarak isteği imzalayın.
 
 ### <a name="requirements-for-your-ssl-certificate"></a>SSL sertifikanıza yönelik gereksinimler
@@ -402,7 +402,7 @@ Bir sertifikayı App Service’te kullanabilmek için sertifikanın aşağıdaki
 
     ![Web uygulamasındaki fiyatlandırma katmanını denetle](media/solution-deployment-guide-geo-distributed/image35.png)
 
-Özel SSL, **ücretsiz** veya **paylaşılan** katmanda desteklenmez. Üst ölçekte, sonraki bölümde bulunan adımları izleyin veya **fiyatlandırma katmanınızı seçin** SAYFASıNDA, [SSL sertifikanızı karşıya yüklemek ve bağlamak](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-ssl)için atlayın.
+Özel SSL, **ücretsiz** veya **paylaşılan** katmanda desteklenmez. Üst ölçekte, sonraki bölümde bulunan adımları izleyin veya **fiyatlandırma katmanınızı seçin** SAYFASıNDA, [SSL sertifikanızı karşıya yüklemek ve bağlamak](/azure/app-service/app-service-web-tutorial-custom-ssl)için atlayın.
 
 #### <a name="scale-up-your-app-service-plan"></a>App Service planınızın ölçeğini artırma
 
@@ -463,7 +463,7 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
 
 İstendiğinde, daha sonra App Service SSL sertifikanızı karşıya yüklemek için bir dışarı aktarma parolası tanımlayın.
 
-Sertifika isteğini oluşturmak için IIS veya **Certreq.exe** kullanıldığında, sertifikayı yerel bir makineye yükler ve ardından [sertifikayı PFX 'e dışarı aktarın](https://technet.microsoft.com/library/cc754329(v=ws.11).aspx).
+Sertifika isteğini oluşturmak için IIS veya **Certreq.exe** kullanıldığında, sertifikayı yerel bir makineye yükler ve ardından [sertifikayı PFX 'e dışarı aktarın](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754329(v=ws.11)).
 
 #### <a name="upload-the-ssl-certificate"></a>SSL sertifikasını karşıya yükleme
 
@@ -475,7 +475,7 @@ Sertifika isteğini oluşturmak için IIS veya **Certreq.exe** kullanıldığın
 
 4. **Sertifika parolası**' nda, pfx dosyası dışarı aktarılırken oluşturulan parolayı yazın.
 
-5. **Karşıya Yükle**'yi seçin.
+5. **Karşıya Yükle**’yi seçin.
 
     ![SSL sertifikasını karşıya yükle](media/solution-deployment-guide-geo-distributed/image38.png)
 
@@ -508,13 +508,13 @@ App Service sertifikayı karşıya yüklemeyi bitirdiğinde, **SSL bağlamaları
 
 #### <a name="remap-the-a-record-for-ip-ssl"></a>IP SSL için bir kaydı yeniden eşleyin
 
-Web uygulamasında IP tabanlı SSL kullanılmıyorsa, [özel etki alanınız Için test https](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-ssl)'ye atlayın.
+Web uygulamasında IP tabanlı SSL kullanılmıyorsa, [özel etki alanınız Için test https](/azure/app-service/app-service-web-tutorial-custom-ssl)'ye atlayın.
 
 Varsayılan olarak, Web uygulaması paylaşılan bir genel IP adresi kullanır. Sertifika, IP tabanlı SSL ile bağlandığında, App Service Web uygulaması için yeni ve ayrılmış bir IP adresi oluşturur.
 
 Bir kayıt Web uygulamasına eşlendiğinde, etki alanı kayıt defteri ayrılmış IP adresi ile birlikte güncelleştirilmeleri gerekir.
 
-**Özel etki alanı** sayfası, yeni ve ayrılmış IP adresi ile güncelleştirilir. Bu [IP adresini](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain)kopyalayın ve ardından [bir kaydı](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain) bu yeni IP adresiyle yeniden eşleyin.
+**Özel etki alanı** sayfası, yeni ve ayrılmış IP adresi ile güncelleştirilir. Bu [IP adresini](/azure/app-service/app-service-web-tutorial-custom-domain)kopyalayın ve ardından [bir kaydı](/azure/app-service/app-service-web-tutorial-custom-domain) bu yeni IP adresiyle yeniden eşleyin.
 
 #### <a name="test-https"></a>HTTPS’yi test etme
 
@@ -565,7 +565,7 @@ Uygulama varsayılan olarak, artık sektör standartları ( [PCI DSS](https://wi
 
     5. **Kaynak grubu konumu** alanında kaynak grubunun konumunu seçin. Bu ayar, kaynak grubunun konumunu ifade eder ve genel olarak dağıtılan Traffic Manager profilini etkilemez.
 
-    6. **Oluştur**'u seçin.
+    6. **Oluştur**’u seçin.
 
     7. Traffic Manager profilinin genel dağıtımı tamamlandığında, ilgili kaynak grubunda kaynaklardan biri olarak listelenir.
 
@@ -577,7 +577,7 @@ Uygulama varsayılan olarak, artık sektör standartları ( [PCI DSS](https://wi
 
 2. **Traffic Manager profili**' nde, **Ayarlar** bölümünde **uç noktalar**' ı seçin.
 
-3. **Ekle**'yi seçin.
+3. **Add (Ekle)** seçeneğini belirleyin.
 
 4. Azure Stack hub uç noktası ekleniyor.
 
@@ -626,4 +626,4 @@ Azure Traffic Manager ve coğrafi konuma özgü uç noktalar aracılığıyla ve
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Azure bulut desenleri hakkında daha fazla bilgi edinmek için bkz. [bulut tasarım desenleri](https://docs.microsoft.com/azure/architecture/patterns).
+- Azure bulut desenleri hakkında daha fazla bilgi edinmek için bkz. [bulut tasarım desenleri](/azure/architecture/patterns).

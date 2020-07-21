@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 75289eae902c5363862e345bdedb97cbcee0476e
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 6de35cb55c4c35a2a9927f9ffc2516ccb00cd89f
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911858"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477329"
 ---
 # <a name="deploy-hybrid-app-with-on-premises-data-that-scales-cross-cloud"></a>Çapraz bulutu ölçeklendirirken şirket içi verilerle karma uygulama dağıtma
 
@@ -131,7 +131,7 @@ Azure App Service, bir Web uygulamasını çalıştırmayı ve yönetmeyi basitl
 
 ### <a name="create-web-apps"></a>Web uygulamaları oluşturma
 
-1. Azure 'da [App Service planını yönetme](https://docs.microsoft.com/azure/app-service/app-service-plan-manage#create-an-app-service-plan)bölümündeki yönergeleri izleyerek Azure 'da bir Web uygulaması oluşturun. Web uygulamasını karma ağınızla aynı aboneliğe ve kaynak grubuna yerleştirdiğinizden emin olun.
+1. Azure 'da [App Service planını yönetme](/azure/app-service/app-service-plan-manage#create-an-app-service-plan)bölümündeki yönergeleri izleyerek Azure 'da bir Web uygulaması oluşturun. Web uygulamasını karma ağınızla aynı aboneliğe ve kaynak grubuna yerleştirdiğinizden emin olun.
 
 2. Azure Stack hub 'ında önceki adımı (1) yineleyin.
 
@@ -172,7 +172,7 @@ Karma ağın Azure tarafındaki sanal ağ geçidi, Azure App Service ile tümle�
 
 ### <a name="integrate-the-azure-app-service-app-with-the-hybrid-network"></a>Azure App Service uygulamasını karma ağla tümleştirme
 
-1. Uygulamayı Azure VNet 'e bağlamak için [Ağ Geçidi gerekli VNET tümleştirmesi](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet#gateway-required-vnet-integration)bölümündeki yönergeleri izleyin.
+1. Uygulamayı Azure VNet 'e bağlamak için [Ağ Geçidi gerekli VNET tümleştirmesi](/azure/app-service/web-sites-integrate-with-vnet#gateway-required-vnet-integration)bölümündeki yönergeleri izleyin.
 
 2. Web uygulamasını barındıran App Service planına yönelik **Ayarlar** ' a gidin. **Ayarlar**' da **ağ**' ı seçin.
 
@@ -186,13 +186,13 @@ Karma ağın Azure tarafındaki sanal ağ geçidi, Azure App Service ile tümle�
 
     ![Sanal ağ tümleştirmesinde yönlendirileceği IP adresi aralıkları](media/solution-deployment-guide-hybrid/image13.png)
 
-App Service Azure sanal ağları ile tümleştirme hakkında daha fazla bilgi edinmek için bkz. [uygulamanızı bir Azure sanal ağı Ile tümleştirme](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet).
+App Service Azure sanal ağları ile tümleştirme hakkında daha fazla bilgi edinmek için bkz. [uygulamanızı bir Azure sanal ağı Ile tümleştirme](/azure/app-service/web-sites-integrate-with-vnet).
 
 ### <a name="configure-the-azure-stack-hub-virtual-network"></a>Azure Stack hub sanal ağını yapılandırma
 
 Azure Stack hub sanal ağındaki yerel ağ geçidinin, trafiği App Service Noktadan siteye adres aralığından yönlendirmek üzere yapılandırılması gerekir.
 
-1. Azure Stack hub 'ında **yerel ağ geçidi**' ne gidin. **Ayarlar** altında **Yapılandırma**'yı seçin.
+1. Azure Stack hub 'ında **yerel ağ geçidi**' ne gidin. **Ayarlar** bölümünde **Yapılandırma**‘yı seçin.
 
     ![Azure Stack Merkezi yerel ağ geçidinde ağ geçidi yapılandırma seçeneği](media/solution-deployment-guide-hybrid/image14.png)
 
@@ -210,7 +210,7 @@ Bu öğretici, DNS 'yi yönetmek için Azure DNS kullanır, çünkü App Service
 
 ### <a name="create-subdomains"></a>Alt etki alanları oluşturma
 
-Traffic Manager DNS CNAMEs ' i kullandığından, trafiği uç noktalara doğru bir şekilde yönlendirmek için bir alt etki alanı gerekir. DNS kayıtları ve etki alanı eşlemesi hakkında daha fazla bilgi için bkz. [Traffic Manager etki alanlarını eşleme](https://docs.microsoft.com/azure/app-service/web-sites-traffic-manager-custom-domain-name).
+Traffic Manager DNS CNAMEs ' i kullandığından, trafiği uç noktalara doğru bir şekilde yönlendirmek için bir alt etki alanı gerekir. DNS kayıtları ve etki alanı eşlemesi hakkında daha fazla bilgi için bkz. [Traffic Manager etki alanlarını eşleme](/azure/app-service/web-sites-traffic-manager-custom-domain-name).
 
 Azure uç noktası için kullanıcıların Web uygulamanıza erişmek için kullanabileceği bir alt etki alanı oluşturacaksınız. Bu öğretici için **app.Northwind.com**kullanabilir, ancak bu değeri kendi etki alanınızı temel alarak özelleştirmeniz gerekir.
 
@@ -218,13 +218,13 @@ Ayrıca, Azure Stack hub uç noktası için bir kayıt içeren bir alt etki alan
 
 ### <a name="configure-a-custom-domain-in-azure"></a>Azure 'da özel bir etki alanı yapılandırma
 
-1. [CNAME 'i Azure App Service ile eşleyerek](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record) **app.Northwind.com** ana bilgisayar adını Azure Web uygulamasına ekleyin.
+1. [CNAME 'i Azure App Service ile eşleyerek](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record) **app.Northwind.com** ana bilgisayar adını Azure Web uygulamasına ekleyin.
 
 ### <a name="configure-custom-domains-in-azure-stack-hub"></a>Azure Stack hub 'da özel etki alanlarını yapılandırma
 
-1. [Bir kaydı Azure App Service ile eşleyerek](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain#map-an-a-record)Azure Stack Hub web uygulamasına **azurestack.Northwind.com** ana bilgisayar adını ekleyin. App Service uygulaması için internet yönlendirilebilir IP adresini kullanın.
+1. [Bir kaydı Azure App Service ile eşleyerek](/azure/app-service/app-service-web-tutorial-custom-domain#map-an-a-record)Azure Stack Hub web uygulamasına **azurestack.Northwind.com** ana bilgisayar adını ekleyin. App Service uygulaması için internet yönlendirilebilir IP adresini kullanın.
 
-2. [CNAME 'i Azure App Service ile eşleyerek](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)Azure Stack Hub web uygulamasına **app.Northwind.com** ana bilgisayar adını ekleyin. Önceki adımda yapılandırdığınız ana bilgisayar adını (1) CNAME için hedef olarak kullanın.
+2. [CNAME 'i Azure App Service ile eşleyerek](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)Azure Stack Hub web uygulamasına **app.Northwind.com** ana bilgisayar adını ekleyin. Önceki adımda yapılandırdığınız ana bilgisayar adını (1) CNAME için hedef olarak kullanın.
 
 ## <a name="configure-ssl-certificates-for-cross-cloud-scaling"></a>Platformlar arası ölçeklendirme için SSL sertifikalarını yapılandırma
 
@@ -238,9 +238,9 @@ Azure 'a SSL eklemek için:
 
 1. Aldığınız SSL sertifikasının oluşturduğunuz alt etki alanı için geçerli olduğundan emin olun. (Joker karakter sertifikaları kullanmak normaldir.)
 
-2. Azure 'da, **Web uygulamanızı hazırlama** ve [var olan özel bir SSL sertifikasını Azure 'a](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-ssl) **bağlama bölümündeki** yönergeleri izleyin Web Apps makalesine gidin. **SSL türü**olarak **SNı tabanlı SSL** ' yi seçin.
+2. Azure 'da, **Web uygulamanızı hazırlama** ve [var olan özel bir SSL sertifikasını Azure 'a](/azure/app-service/app-service-web-tutorial-custom-ssl) **bağlama bölümündeki** yönergeleri izleyin Web Apps makalesine gidin. **SSL türü**olarak **SNı tabanlı SSL** ' yi seçin.
 
-3. Tüm trafiği HTTPS bağlantı noktasına yönlendir. [Var olan bir özel SSL sertifikası 'nı Web Apps Azure 'A bağlama](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-ssl) makalesindeki **https 'yi zorla** bölümünde bulunan yönergeleri izleyin.
+3. Tüm trafiği HTTPS bağlantı noktasına yönlendir. [Var olan bir özel SSL sertifikası 'nı Web Apps Azure 'A bağlama](/azure/app-service/app-service-web-tutorial-custom-ssl) makalesindeki **https 'yi zorla** bölümünde bulunan yönergeleri izleyin.
 
 Azure Stack hub 'ına SSL eklemek için:
 
@@ -248,13 +248,13 @@ Azure Stack hub 'ına SSL eklemek için:
 
 ## <a name="configure-and-deploy-the-web-app"></a>Web uygulamasını yapılandırma ve dağıtma
 
-Uygulama kodunu, telemetri doğru Application Insights örneğine bildirmek ve Web uygulamalarını doğru bağlantı dizeleri ile yapılandırmak için yapılandıracaksınız. Application Insights hakkında daha fazla bilgi edinmek için bkz. [Application Insights nedir?](https://docs.microsoft.com/azure/application-insights/app-insights-overview)
+Uygulama kodunu, telemetri doğru Application Insights örneğine bildirmek ve Web uygulamalarını doğru bağlantı dizeleri ile yapılandırmak için yapılandıracaksınız. Application Insights hakkında daha fazla bilgi edinmek için bkz. [Application Insights nedir?](/azure/application-insights/app-insights-overview)
 
 ### <a name="add-application-insights"></a>Application Insights Ekle
 
 1. Web uygulamanızı Microsoft Visual Studio açın.
 
-2. Web trafiği arttıkça veya azaldıkça, Application Insights tarafından uyarı oluşturmak için kullanılan Telemetriyi iletmek üzere projenize [Application Insights ekleyin](https://docs.microsoft.com/azure/azure-monitor/app/asp-net-core#enable-client-side-telemetry-for-web-applications) .
+2. Web trafiği arttıkça veya azaldıkça, Application Insights tarafından uyarı oluşturmak için kullanılan Telemetriyi iletmek üzere projenize [Application Insights ekleyin](/azure/azure-monitor/app/asp-net-core#enable-client-side-telemetry-for-web-applications) .
 
 ### <a name="configure-dynamic-connection-strings"></a>Dinamik bağlantı dizelerini yapılandırma
 
@@ -287,7 +287,7 @@ App Service ortam değişkenlerini, uygulamanın her örneğine farklı bir bağ
 
 1. Azure ve Azure Stack Hub için bağlantı dizeleri oluşturun. Dizeler, kullanılan IP adresleri dışında, aynı olmalıdır.
 
-2. Azure ve Azure Stack hub 'da, ad içinde ön ek olarak kullanarak, Web uygulamasında uygun bağlantı dizesini [bir uygulama ayarı olarak](https://docs.microsoft.com/azure/app-service/web-sites-configure) ekleyin `SQLCONNSTR\_` .
+2. Azure ve Azure Stack hub 'da, ad içinde ön ek olarak kullanarak, Web uygulamasında uygun bağlantı dizesini [bir uygulama ayarı olarak](/azure/app-service/web-sites-configure) ekleyin `SQLCONNSTR\_` .
 
 3. Web uygulaması ayarlarını **kaydedin** ve uygulamayı yeniden başlatın.
 
@@ -335,7 +335,7 @@ Web uygulamanızı bir App Service ortamında oluşturduğunuzda, tek bir örnek
 
 3. **Cool tuşuna** **5**olarak ayarlayın.
 
-4. **Ekle**'yi seçin.
+4. **Add (Ekle)** seçeneğini belirleyin.
 
 5. **+ Kural Ekle**' yi seçin.
 
@@ -368,7 +368,7 @@ Trafik azaldıkça Azure Web uygulaması, maliyetleri azaltmak için etkin örne
    - **Örnek sayısını** **1**olarak ayarlayın.
    - **Cool tuşuna** **5**olarak ayarlayın.
 
-2. **Ekle**'yi seçin.
+2. **Add (Ekle)** seçeneğini belirleyin.
 
 ## <a name="create-a-traffic-manager-profile-and-configure-cross-cloud-scaling"></a>Traffic Manager profili oluşturma ve platformlar arası ölçeklendirmeyi yapılandırma
 
@@ -386,7 +386,7 @@ Azure 'da bir Traffic Manager profili oluşturun ve sonra da platformlar arası 
    - **Kaynak grubu**' nda, bu profil için yeni bir kaynak grubu oluşturun.
    - **Kaynak grubu konumu** alanında kaynak grubunun konumunu seçin. Bu ayar, kaynak grubunun konumunu ifade eder ve genel olarak dağıtılan Traffic Manager profilini etkilemez.
 
-4. **Oluştur**'u seçin.
+4. **Oluştur**’u seçin.
 
     ![Traffic Manager profili oluşturma](media/solution-deployment-guide-hybrid/image19.png)
 
@@ -398,7 +398,7 @@ Azure 'da bir Traffic Manager profili oluşturun ve sonra da platformlar arası 
 
 2. **Traffic Manager profilinde**, **Ayarlar**altında **uç noktalar**' ı seçin.
 
-3. **Ekle**'yi seçin.
+3. **Add (Ekle)** seçeneğini belirleyin.
 
 4. **Uç nokta Ekle**' de Azure Stack Hub için aşağıdaki ayarları kullanın:
 
@@ -543,4 +543,4 @@ Otomatik trafik geçişini yapılandırmak için aşağıdaki adımları kılavu
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Azure bulut desenleri hakkında daha fazla bilgi edinmek için bkz. [bulut tasarım desenleri](https://docs.microsoft.com/azure/architecture/patterns).
+- Azure bulut desenleri hakkında daha fazla bilgi edinmek için bkz. [bulut tasarım desenleri](/azure/architecture/patterns).

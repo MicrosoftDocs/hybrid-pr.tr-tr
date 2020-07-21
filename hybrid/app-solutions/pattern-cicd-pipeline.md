@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 306cc9604a8e919724f9f76b7e5122d534d2d1ae
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: e26056a9507a7467473b009725d4f210d9d59ec8
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911959"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477244"
 ---
 # <a name="devops-pattern"></a>DevOps kalıbı
 
@@ -47,7 +47,7 @@ DevOps deseninin, hedef ortamdan bağımsız olarak dağıtımlar arasında tuta
 - Dağıtım parametreleri tüm hedef ortamlarda çalışacak mı?
 - Kaynağa özgü özellikler tüm hedef bulutlarda kullanılabilir mi?
 
-Daha fazla bilgi için bkz. [bulut tutarlılığı için Azure Resource Manager şablonları geliştirme](https://docs.microsoft.com/azure/azure-resource-manager/templates-cloud-consistency).
+Daha fazla bilgi için bkz. [bulut tutarlılığı için Azure Resource Manager şablonları geliştirme](/azure/azure-resource-manager/templates-cloud-consistency).
 
 Ayrıca, bu düzenin nasıl uygulanacağını saptarken aşağıdaki noktaları göz önünde bulundurun:
 

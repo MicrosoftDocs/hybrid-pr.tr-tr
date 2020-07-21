@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: b34ba7c10ff5f658d645923ae8b6de2fb2607ccb
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: f6064aaa1087a3c0cfc26e09371e81752c777edb
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84912098"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477278"
 ---
 # <a name="deploy-a-highly-available-mongodb-solution-to-azure-and-azure-stack-hub"></a>Yüksek oranda kullanılabilir bir MongoDB çözümünü Azure 'a ve Azure Stack hub 'a dağıtma
 
@@ -40,9 +40,9 @@ Bu çözümde şu şekilde bir örnek ortam oluşturacaksınız:
 - İki bağlı Azure Stack hub tümleşik sistemi (Azure Stack hub). Bu dağıtım Azure Stack Geliştirme Seti (ASDK) üzerinde çalışmıyor. Azure Stack hub 'ı hakkında daha fazla bilgi edinmek için bkz. [Azure Stack hub nedir?](https://azure.microsoft.com/products/azure-stack/hub/)
   - Her Azure Stack hub 'ında kiracı aboneliği. 
   - **Her bir Azure Stack Hub için her abonelik KIMLIĞINI ve Azure Resource Manager uç noktasını bir yere unutmayın.**
-- Her bir Azure Stack hub 'ındaki kiracı aboneliğine yönelik izinlere sahip bir Azure Active Directory (Azure AD) hizmet sorumlusu. Azure Stack hub 'Ları farklı Azure AD Kiracılarına karşı dağıtılırsa iki hizmet sorumlusu oluşturmanız gerekebilir. Azure Stack Hub için hizmet sorumlusu oluşturma hakkında bilgi edinmek için bkz. [Azure Stack hub kaynaklarına erişmek için uygulama kimliği kullanma](https://docs.microsoft.com/azure-stack/user/azure-stack-create-service-principals).
+- Her bir Azure Stack hub 'ındaki kiracı aboneliğine yönelik izinlere sahip bir Azure Active Directory (Azure AD) hizmet sorumlusu. Azure Stack hub 'Ları farklı Azure AD Kiracılarına karşı dağıtılırsa iki hizmet sorumlusu oluşturmanız gerekebilir. Azure Stack Hub için hizmet sorumlusu oluşturma hakkında bilgi edinmek için bkz. [Azure Stack hub kaynaklarına erişmek için uygulama kimliği kullanma](/azure-stack/user/azure-stack-create-service-principals).
   - **Her bir hizmet sorumlusunun uygulama KIMLIĞI, gizli anahtar ve kiracı adını (xxxxx.onmicrosoft.com) bir yere unutmayın.**
-- Ubuntu 16,04 her bir Azure Stack hub 'ının Market 'e göre dağıtılmış. Market dağıtımı hakkında daha fazla bilgi için bkz. [Market öğelerini Azure Stack hub 'ına indirme](https://docs.microsoft.com/azure-stack/operator/azure-stack-download-azure-marketplace-item).
+- Ubuntu 16,04 her bir Azure Stack hub 'ının Market 'e göre dağıtılmış. Market dağıtımı hakkında daha fazla bilgi için bkz. [Market öğelerini Azure Stack hub 'ına indirme](/azure-stack/operator/azure-stack-download-azure-marketplace-item).
 - Yerel makinenizde yüklü [Docker for Windows](https://docs.docker.com/docker-for-windows/) .
 
 ## <a name="get-the-docker-image"></a>Docker görüntüsünü al

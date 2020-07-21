@@ -7,20 +7,20 @@ ms.date: 06/07/2020
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 4fd52f76baad8059e130adfc01cdd0152b40a510
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: c56575ac8ea6cb35d60bb9419269db89b0295721
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911954"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477227"
 ---
-# <a name="hybrid-app-design-considerations"></a>Karma uygulama tasarımı konuları
+# <a name="hybrid-app-design-considerations"></a>Hibrit uygulama tasarımında dikkat edilmesi gerekenler
 
 Tek tutarlı karma bulutunuz Microsoft Azure. Geliştirme yatırımlarınızı yeniden kullanmanıza ve küresel Azure, egeign Azure bulutlarını ve Azure Stack veri merkezinizde bir Azure uzantısı olan uygulamalara olanak tanır. Bulutları kapsayan uygulamalar da *karma uygulamalar*olarak adlandırılır.
 
-[*Azure Uygulama Mimarisi Kılavuzu*](https://docs.microsoft.com/azure/architecture/guide) , ölçeklenebilir, dayanıklı ve yüksek oranda kullanılabilir uygulamalar tasarlamak için yapılandırılmış bir yaklaşım açıklamaktadır. [*Azure uygulama mimarisi kılavuzunda*](https://docs.microsoft.com/azure/architecture/guide) açıklanan noktalar, tek bir bulut için tasarlanan uygulamalar ve bulutların yayılacağı uygulamalar için de geçerlidir.
+[*Azure Uygulama Mimarisi Kılavuzu*](/azure/architecture/guide) , ölçeklenebilir, dayanıklı ve yüksek oranda kullanılabilir uygulamalar tasarlamak için yapılandırılmış bir yaklaşım açıklamaktadır. [*Azure uygulama mimarisi kılavuzunda*](/azure/architecture/guide) açıklanan noktalar, tek bir bulut için tasarlanan uygulamalar ve bulutların yayılacağı uygulamalar için de geçerlidir.
 
-Bu makalede, [*Azure Uygulama*](https://docs.microsoft.com/azure/architecture/guide/) [ *Mimarisi Kılavuzu*](https://docs.microsoft.com/azure/architecture/guide/) 'nda ele alınan yazılım kalitesinin ve özellikle karma uygulamalar tasarlamaya odaklanılan [*yazılım kalitesinin*](https://docs.microsoft.com/azure/architecture/guide/pillars) her ikisi de anlatılmaktadır. Ayrıca, karma uygulamalar tek bir buluta veya bir şirket içi veri merkezine özel olmadığından, bir *yerleşim* de ekleyeceğiz.
+Bu makalede, [*Azure Uygulama*](/azure/architecture/guide/) [ *Mimarisi Kılavuzu*](/azure/architecture/guide/) 'nda ele alınan yazılım kalitesinin ve özellikle karma uygulamalar tasarlamaya odaklanılan [*yazılım kalitesinin*](/azure/architecture/guide/pillars) her ikisi de anlatılmaktadır. Ayrıca, karma uygulamalar tek bir buluta veya bir şirket içi veri merkezine özel olmadığından, bir *yerleşim* de ekleyeceğiz.
 
 Karma senaryolar, geliştirme için kullanılabilen kaynaklarla büyük ölçüde farklılık gösterir ve coğrafya, güvenlik, internet erişimi ve diğer konular gibi önemli noktalara dikkat edin. Bu kılavuz, belirli konuları numaralandıramasa da, izlemeniz için bazı önemli yönergeler ve en iyi uygulamalar sağlayabilir. Karma uygulama mimarisini başarıyla tasarlama, yapılandırma, dağıtma ve sürdürme, sizin için doğal olarak tanınmayan birçok tasarım ile ilgilidir.
 
@@ -51,7 +51,7 @@ Stokunuzda içerilecek ortak uygulama bileşenleri Tablo 1 ' de listelenmiştir.
 | **Bileşen** | **Karma Uygulama Kılavuzu** |
 | ---- | ---- |
 | İstemci bağlantıları | Uygulamanız (herhangi bir cihazda), aşağıdaki yöntemlerle birlikte tek bir giriş noktasından farklı yollarla kullanıcılara erişebilir:<br>-Kullanıcının uygulamayla çalışmak için bir istemcisinin yüklü olmasını gerektiren bir istemci-sunucu modeli. Tarayıcıdan erişilen sunucu tabanlı bir uygulama.<br>-İstemci bağlantıları, dolaşım ücretleri uygulanabileceğini, bağlantı kesildiğinde veya uyarıladığınızda bildirimleri içerebilir. |
-| Kimlik Doğrulaması  | Uygulamaya bağlanan bir kullanıcı veya başka bir bileşen için kimlik doğrulaması gerekli olabilir. |
+| Kimlik doğrulaması  | Uygulamaya bağlanan bir kullanıcı veya başka bir bileşen için kimlik doğrulaması gerekli olabilir. |
 | API'ler  | Geliştiricilere, API kümeleri ve sınıf kitaplıkları ile uygulamanıza programlı erişim sağlayabilir ve internet standartlarına dayalı bir bağlantı arabirimi sağlayabilirsiniz. API 'Leri, bir uygulamayı bağımsız işletim mantıksal birimlerine ayırmak için de kullanabilirsiniz. |
 | Hizmetler  | Bir uygulamaya yönelik özellikleri sağlamak için kısa hizmetlerini kullanabilirsiniz. Bir hizmet, uygulamanın çalıştığı altyapı olabilir. |
 | Kuyruklar | Kullanım ömürlerini ve uygulamanızın bileşenlerinin durumunu düzenlemek için kuyrukları kullanabilirsiniz. Bu kuyruklar, abone tarafların mesajlaşma, bildirim ve arabelleğe alma özelliklerini sağlayabilir. |
@@ -93,7 +93,7 @@ Yerleştirme, bileşenlerin bir karma uygulamayı en iyi şekilde hizmet edebilm
 
 **Gerekli konumları doğrulayın.** Uygulamanın veya bileşenlerinden birinin, belirli bir bulut için üzerinde çalışması veya sertifika gerektirmesi için gerekli olduğundan emin olun. Bu, şirketinizdeki veya yasalar tarafından dikte edilen egemenlik gereksinimlerini içerebilir. Ayrıca, belirli bir konum veya yerel ayar için herhangi bir şirket içi işlemin gerekli olup olmadığını belirleyebilirsiniz.
 
-**Yokermesi bağlantı bağımlılıkları.** Gerekli konumlar ve diğer faktörler, bileşenlerinizin arasında bağlantı bağımlılıklarını dikte edebilir. Bileşenleri yerleştirirken, aralarında iletişimin en iyi bağlantısını ve güvenliğini saptayın. [ *VPN*,](https://docs.microsoft.com/azure/vpn-gateway/) [ *ExpressRoute*](https://docs.microsoft.com/azure/expressroute/) ve [ *karma bağlantılar*](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections) seçenekleri bulunur.
+**Yokermesi bağlantı bağımlılıkları.** Gerekli konumlar ve diğer faktörler, bileşenlerinizin arasında bağlantı bağımlılıklarını dikte edebilir. Bileşenleri yerleştirirken, aralarında iletişimin en iyi bağlantısını ve güvenliğini saptayın. [ *VPN*,](/azure/vpn-gateway/) [ *ExpressRoute*](/azure/expressroute/) ve [ *karma bağlantılar*](/azure/app-service/app-service-hybrid-connections) seçenekleri bulunur.
 
 **Platform yeteneklerini değerlendirin.** Her uygulama bileşeni için, uygulama bileşeni için gerekli kaynak sağlayıcısının bulutta kullanılabilir olup olmadığını ve bant genişliğinin beklenen aktarım hızını ve gecikme süresi gereksinimlerini barındırabilmesine olanak sağlamak için bkz..
 
@@ -109,7 +109,7 @@ Yerleştirme, bileşenlerin bir karma uygulamayı en iyi şekilde hizmet edebilm
 
 Ölçeklenebilirlik, sistemin, uygulamanın boyutuna ve kapsamına ek olarak, diğer faktörler ve hedef kitle boyutunu etkilediği zaman içinde değişebilen bir uygulamada daha fazla yük işlemesini sağlar.
 
-Bu pilde temel tartışmak için, mimaride üstün olan beş paragraf üzerinde [*ölçeklenebilirlik*](https://docs.microsoft.com/azure/architecture/guide/pillars#scalability) konusuna bakın.
+Bu pilde temel tartışmak için, mimaride üstün olan beş paragraf üzerinde [*ölçeklenebilirlik*](/azure/architecture/guide/pillars#scalability) konusuna bakın.
 
 Karma uygulamalar için yatay ölçeklendirme yaklaşımı, talebi karşılamak için daha fazla örnek eklenmesine ve daha sonra daha sessiz dönemler sırasında devre dışı bırakılmasına olanak tanır.
 
@@ -155,7 +155,7 @@ Bu pilde temel tartışmak için, mimaride üstün olan beş paragraf üzerinde 
 
 Dayanıklılık, karma uygulama ve sistemin hatalardan kurtulmasına ve çalışmaya devam etmesine olanak tanır. Dayanıklılık amacı, bir hata oluştuktan sonra uygulamayı tam çalışır duruma döndürmektir. Dayanıklılık stratejileri, yedekleme, çoğaltma ve olağanüstü durum kurtarma gibi çözümler içerir.
 
-Bu pilde temel tartışmak için, mimaride üstün olan beş paragraf üzerinde [*dayanıklılık*](https://docs.microsoft.com/azure/architecture/guide/pillars#resiliency) bölümüne bakın.
+Bu pilde temel tartışmak için, mimaride üstün olan beş paragraf üzerinde [*dayanıklılık*](/azure/architecture/guide/pillars#resiliency) bölümüne bakın.
 
 ### <a name="resiliency-checklist"></a>Dayanıklılık denetim listesi
 
@@ -201,7 +201,7 @@ Uygulamanın izlenmesini gerektiren parçalarını saptayın.
 
 Güvenlik, herhangi bir bulut uygulaması için başlıca önemli noktalara biridir ve karma bulut uygulamaları için daha da kritik hale gelir.
 
-Bu pilde temel tartışmak için, mimaride üstün olan beş paragraf üzerinde [*güvenlik*](https://docs.microsoft.com/azure/architecture/guide/pillars#security) bölümüne bakın.
+Bu pilde temel tartışmak için, mimaride üstün olan beş paragraf üzerinde [*güvenlik*](/azure/architecture/guide/pillars#security) bölümüne bakın.
 
 ### <a name="security-checklist"></a>Güvenlik denetim listesi
 
@@ -229,6 +229,6 @@ Bu, önceden zaman alan bir görev gibi görünebilir, ancak uygulamanızı bu �
 
 Daha fazla bilgi için aşağıdaki kaynaklara bakın:
 
-- [Karma bulut](https://azure.microsoft.com/overview/hybrid-cloud/)
+- [Hibrit bulut](https://azure.microsoft.com/overview/hybrid-cloud/)
 - [Karma bulut uygulamaları](https://azure.microsoft.com/solutions/hybrid-cloud-app/)
 - [Bulut tutarlılığı için Azure Resource Manager şablonları geliştirme](https://aka.ms/consistency)

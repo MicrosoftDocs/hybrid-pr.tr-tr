@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 740a8c0ec904fe8eb3f9744626bc9dd6655bdb52
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 10cb042e2c6d0c6cb567e14072cd80bc663d686c
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84912133"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477346"
 ---
 # <a name="deploy-an-app-that-scales-cross-cloud-using-azure-and-azure-stack-hub"></a>Azure ve Azure Stack hub kullanarak çapraz bulutu ölçeklendirme bir uygulama dağıtma
 
@@ -35,7 +35,7 @@ Bu çözümde, aşağıdakileri yapmak için bir örnek ortam oluşturacaksını
 > 
 > [Karma uygulama tasarımı ile ilgili önemli noktalar](overview-app-design-considerations.md) , karma uygulamalar tasarlamak, dağıtmak ve çalıştırmak için yazılım kalitesinin (yerleştirme, ölçeklenebilirlik, kullanılabilirlik, dayanıklılık, yönetilebilirlik ve güvenlik) aynı şekilde gözden geçirmeleri inceler. Tasarım konuları karma uygulama tasarımını iyileştirirken, üretim ortamlarındaki zorlukları en aza indirmeyle ilgili olarak size yardımcı olur.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Ön koşullar
 
 - Azure aboneliği. Gerekirse, başlamadan önce [ücretsiz bir hesap](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) oluşturun.
 - Azure Stack hub tümleşik sistemi veya Azure Stack Geliştirme Seti dağıtımı (ASDK).
@@ -68,7 +68,7 @@ Platformlar arası çözüm, ortamlar arasında sorunsuz yönetim ve tanıdık a
 
 ### <a name="get-a-custom-domain-and-configure-dns"></a>Özel etki alanı edinme ve DNS 'yi yapılandırma
 
-Etki alanı için DNS bölge dosyasını güncelleştirin. Azure AD, özel etki alanı adının sahipliğini doğrulayacaktır. Azure 'da Azure/Office 365/dış DNS kayıtları için [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal) kullanın veya DNS girişini [farklı bir DNS kaydedicisinde](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)ekleyin.
+Etki alanı için DNS bölge dosyasını güncelleştirin. Azure AD, özel etki alanı adının sahipliğini doğrulayacaktır. Azure 'da Azure/Office 365/dış DNS kayıtları için [Azure DNS](/azure/dns/dns-getstarted-portal) kullanın veya DNS girişini [farklı bir DNS kaydedicisinde](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)ekleyin.
 
 1. Özel bir etki alanını ortak bir kayıt defteri ile kaydedin.
 2. Etki alanına ilişkin etki alanı adı kayıt şirketinde oturum açın. DNS güncelleştirmeleri yapmak için onaylanan yönetici gerekli olabilir.
@@ -97,7 +97,7 @@ Azure Repos
 
 ### <a name="create-self-contained-web-app-deployment-for-app-services-in-both-clouds"></a>Her iki bulutta da uygulama hizmetleri için kendi kendine içerilen Web uygulaması dağıtımı oluşturma
 
-1. **WebApplication. csproj** dosyasını düzenleyin. Seçin `Runtimeidentifier` ve ekleyin `win10-x64` . (Bkz. [kendi içinde dağıtım](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) belgeleri.)
+1. **WebApplication. csproj** dosyasını düzenleyin. Seçin `Runtimeidentifier` ve ekleyin `win10-x64` . (Bkz. [kendi içinde dağıtım](/dotnet/core/deploying/deploy-with-vs#simpleSelf) belgeleri.)
 
     ![Web uygulaması proje dosyasını Düzenle](media/solution-deployment-guide-cross-cloud-scaling/image3.png)
 
@@ -113,7 +113,7 @@ Azure Repos
 
     ![Web uygulamasına kod ekleme](media/solution-deployment-guide-cross-cloud-scaling/image4.png)
 
-3. Derlemeyi çalıştırın. [Kendi içinde bulunan dağıtım oluşturma](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) Işlemi, Azure 'da ve Azure Stack hub 'da çalışan yapıtları yayımlayacak.
+3. Derlemeyi çalıştırın. [Kendi içinde bulunan dağıtım oluşturma](/dotnet/core/deploying/deploy-with-vs#simpleSelf) Işlemi, Azure 'da ve Azure Stack hub 'da çalışan yapıtları yayımlayacak.
 
 ## <a name="use-an-azure-hosted-agent"></a>Azure barındırılan Aracısı kullanma
 
@@ -211,7 +211,7 @@ Azure Pipelines ve Azure DevOps Services, yayınlar için geliştirme, hazırlı
 21. Tüm değişiklikleri kaydedin.
 
 > [!Note]  
-> Görevler için bazı ayarlar, bir şablondan bir yayın tanımı oluşturulurken otomatik olarak [ortam değişkenleri](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables) olarak tanımlanabilir. Bu ayarlar görev ayarlarında değiştirilemez; Bunun yerine, bu ayarları düzenlemek için üst ortam öğesinin seçilmesi gerekir.
+> Görevler için bazı ayarlar, bir şablondan bir yayın tanımı oluşturulurken otomatik olarak [ortam değişkenleri](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) olarak tanımlanabilir. Bu ayarlar görev ayarlarında değiştirilemez; Bunun yerine, bu ayarları düzenlemek için üst ortam öğesinin seçilmesi gerekir.
 
 ## <a name="publish-to-azure-stack-hub-via-visual-studio"></a>Visual Studio aracılığıyla Azure Stack hub 'a yayımlama
 
@@ -254,7 +254,7 @@ Her iki buluta dağıtmak için Azure Repos Web uygulaması kodu gibi [Azure Res
 
 #### <a name="create-self-contained-web-app-deployment-for-app-services-in-both-clouds"></a>Her iki bulutta da uygulama hizmetleri için kendi kendine içerilen Web uygulaması dağıtımı oluşturma
 
-1. **WebApplication. csproj** dosyasını düzenleyin: seçin `Runtimeidentifier` ve ardından ekleyin `win10-x64` . Daha fazla bilgi için, bkz. [kendi kendine kapsanan dağıtım](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) belgeleri.
+1. **WebApplication. csproj** dosyasını düzenleyin: seçin `Runtimeidentifier` ve ardından ekleyin `win10-x64` . Daha fazla bilgi için, bkz. [kendi kendine kapsanan dağıtım](/dotnet/core/deploying/deploy-with-vs#simpleSelf) belgeleri.
 
 2. Kodu Azure Repos olarak denetlemek için Takım Gezgini kullanın.
 
@@ -268,7 +268,7 @@ Her iki buluta dağıtmak için Azure Repos Web uygulaması kodu gibi [Azure Res
 
 3. **Bağımsız değişkenler**içinde **-r win10-x64** kodu ekleyin. Bu ek, .NET Core ile bağımsız bir dağıtımı tetiklemek için gereklidir.
 
-4. Derlemeyi çalıştırın. [Kendi içinde çalışan dağıtım oluşturma](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) Işlemi, Azure 'da ve Azure Stack hub 'da çalışabilecek yapıtları yayımlar.
+4. Derlemeyi çalıştırın. [Kendi içinde çalışan dağıtım oluşturma](/dotnet/core/deploying/deploy-with-vs#simpleSelf) Işlemi, Azure 'da ve Azure Stack hub 'da çalışabilecek yapıtları yayımlar.
 
 #### <a name="use-an-azure-hosted-build-agent"></a>Azure 'da barındırılan derleme Aracısı kullanma
 
@@ -329,7 +329,7 @@ Yayın tanımı oluşturmak, uygulama oluşturma işlemindeki son adımdır. Bu 
 23. Tüm değişiklikleri kaydedin.
 
 > [!Note]  
-> Yayın görevlerine yönelik bazı ayarlar, bir şablondan bir yayın tanımı oluşturulurken otomatik olarak [ortam değişkenleri](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables) olarak tanımlanır. Bu ayarlar görev ayarlarından değiştirilemez, ancak üst ortam öğelerinde değiştirilebilir.
+> Yayın görevlerine yönelik bazı ayarlar, bir şablondan bir yayın tanımı oluşturulurken otomatik olarak [ortam değişkenleri](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) olarak tanımlanır. Bu ayarlar görev ayarlarından değiştirilemez, ancak üst ortam öğelerinde değiştirilebilir.
 
 ## <a name="create-a-release"></a>Yayın oluştur
 
@@ -361,4 +361,4 @@ Esnek ve sağlam bir çoklu bulut hizmeti, veri güvenliği, yedekleme ve artık
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Azure bulut desenleri hakkında daha fazla bilgi edinmek için bkz. [bulut tasarım desenleri](https://docs.microsoft.com/azure/architecture/patterns).
+- Azure bulut desenleri hakkında daha fazla bilgi edinmek için bkz. [bulut tasarım desenleri](/azure/architecture/patterns).

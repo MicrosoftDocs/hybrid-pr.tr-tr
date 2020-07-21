@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 1b3c683dd3e4a68413f83fd3cc129d6e6f594e1b
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+ms.openlocfilehash: 650eef0f144ecafab4586d93f72e1defdf4a61ce
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84912043"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477261"
 ---
 # <a name="configure-hybrid-cloud-identity-for-azure-and-azure-stack-hub-apps"></a>Azure ve Azure Stack hub uygulamaları için karma bulut kimliğini yapılandırma
 
@@ -69,4 +69,4 @@ Kodu kullanarak Azure Stack hub 'ına bağlanmak için, Azure Stack hub yükleme
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - Azure Stack hub 'ında kimliğin nasıl işlendiği hakkında daha fazla bilgi için bkz. [Azure Stack hub Için kimlik mimarisi](/azure-stack/operator/azure-stack-identity-architecture.md).
-- Azure bulut desenleri hakkında daha fazla bilgi edinmek için bkz. [bulut tasarım desenleri](https://docs.microsoft.com/azure/architecture/patterns).
+- Azure bulut desenleri hakkında daha fazla bilgi edinmek için bkz. [bulut tasarım desenleri](/azure/architecture/patterns).

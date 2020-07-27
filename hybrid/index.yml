@@ -10,17 +10,20 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: 9793f34db13e324de65b719613c0f4dbf4bdf127
-  ms.sourcegitcommit: 8d75007af6ad574e0629208464bbadb97a5c438e
+  ms.openlocfilehash: 5e47f05293640339329914a3183fae51649ded4c
+  ms.sourcegitcommit: ad41cc782094d57b506a3a1d98209f6cf94f0f3b
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 07/22/2020
-  ms.locfileid: "86949670"
+  ms.lasthandoff: 07/24/2020
+  ms.locfileid: "87121816"
 highlightedContent:
   items:
   - title: Yeni Azure Stack HCI’ı keşfedin
     itemType: video
     url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/
+  - title: 'Inspire 2020: Azure Stack HCI’daki yenilikler'
+    itemType: video
+    url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
   - title: Azure Hibrit Sanal Etkinliği
     itemType: video
     url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
@@ -258,7 +261,7 @@ additionalContent:
         text: Desenler ve çözüm örnekleri nelerdir?
       - url: ./app-solutions/overview-app-design-considerations.md
         text: Hibrit uygulama tasarımında dikkat edilmesi gerekenler
-    - title: Hibrit desenleri keşfetme
+    - title: Hibrit uygulama desenlerini keşfetme
       links:
       - url: ./app-solutions/pattern-cross-cloud-scale.md
         text: Bulutlar arası ölçeklendirme
@@ -268,7 +271,7 @@ additionalContent:
         text: Giren müşteri algılama (perakende)
       - url: ./app-solutions/pattern-geo-distributed.md
         text: Coğrafi olarak dağıtılmış uygulama
-    - title: Hibrit çözüm örneklerini dağıtma
+    - title: Hibrit uygulama çözümü örneklerini dağıtma
       links:
       - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
         text: Bulutlar arası ölçeklendirme
@@ -298,6 +301,8 @@ additionalContent:
         text: Azure için .NET geliştirme
       - url: https://github.com/likamrat/azure_arc
         text: Azure Arc hızlı başlangıç kılavuzları
+      - url: https://github.com/Azure/AzureStackHCI-EvalGuide
+        text: Azure Stack HCI gelişim kılavuzu
       - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
         text: Azure IoT Edge cihazları için onaylandı
       - url: /samples/browse/

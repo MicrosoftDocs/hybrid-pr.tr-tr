@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: ab8146340f284af226f336af8fddd2a30977869d
-  ms.sourcegitcommit: 2efdd6422c2af773ad7890dcbc546e816e501c0e
+  ms.openlocfilehash: b888756accc1e538d358e91aec6740b392dafea0
+  ms.sourcegitcommit: 72dbbc933220a4e7273abf46ad3fc6032d122ca7
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 07/28/2020
-  ms.locfileid: "87264106"
+  ms.lasthandoff: 07/31/2020
+  ms.locfileid: "87473810"
 highlightedContent:
   items:
   - title: Yeni Azure Stack HCI’ı keşfedin
@@ -56,7 +56,7 @@ productDirectory:
     - url: /azure-stack/hci
       text: Azure Stack HCI
   - title: Cihazlar için akıllı uç platformları.
-    imageSrc: media/index/azure-stack-hub.svg
+    imageSrc: media/index/intelligent.svg
     links:
     - url: /azure/iot-edge/
       text: Azure IoT Edge
@@ -251,6 +251,20 @@ conceptualContent:
     - url: /azure/fxt-edge-filer/fxt-overview
       itemType: overview
       text: Azure FXT Edge Filer
+  - title: Araçlar
+    links:
+    - url: /dotnet/azure/
+      itemType: overview
+      text: Azure için .NET geliştirme
+    - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+      itemType: overview
+      text: Görüntü AI Geliştirici Seti
+    - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
+      itemType: overview
+      text: Visual Studio Code için Azure IoT Tools
+    - url: /visualstudio/azure/
+      itemType: overview
+      text: Visual Studio Azure geliştirme
 additionalContent:
   sections:
   - title: Hibrit çözümler
@@ -283,43 +297,43 @@ additionalContent:
         text: Coğrafi olarak dağıtılmış uygulama
   - title: Ek kaynaklar
     items:
-    - title: Genel kaynaklar
+    - title: Genel
       links:
       - url: /azure-stack/operator/compare-azure-azure-stack
         text: Azure küresel bulutu ile Azure Stack’in karşılaştırması
+      - url: https://azure.microsoft.com/blog/topics/hybrid/
+        text: Azure hibrit blogu
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Azure hibrit özellikleri
-      - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
-        text: Azure Stack Hibrit Uygulamalara Giriş
+      - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
+        text: Müşterilerin Azure Stack Hub çözümleri
       - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
         text: Müşterilerin hibrit bulut hikayeleri
-      - url: /learn
-        text: Microsoft Learn etkileşimli eğitimi
-      - url: /learn/tv/
-        text: Microsoft Learn TV
-    - title: Oluşturma ve çalıştırma kaynakları
+      - url: /answers/products/
+        text: Microsoft Soru-Cevap forumları
+    - title: Değerlendirme ve öğrenme
       links:
-      - url: /dotnet/azure/
-        text: Azure için .NET geliştirme
       - url: https://github.com/likamrat/azure_arc
         text: Azure Arc hızlı başlangıç kılavuzları
+      - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
+        text: Azure IoT Edge yapay zeka video zekası çözüm hızlandırıcısı
+      - url: https://labs.iotedge.dev/
+        text: Azure IoT Edge uygulamalı laboratuvarları
+      - url: https://www.azureiotsolutions.com/Accelerators
+        text: Azure IoT çözüm hızlandırıcıları
+      - url: /azure-stack/asdk
+        text: Azure Stack geliştirme seti
       - url: https://github.com/Azure/AzureStackHCI-EvalGuide
         text: Azure Stack HCI gelişim kılavuzu
+      - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
+        text: Azure Stack hibrit uygulamalara giriş
       - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
         text: Azure IoT Edge cihazları için onaylandı
       - url: /samples/browse/
-        text: Kod örneği tarayıcısı
+        text: Kod örnekleri tarayıcısı
+      - url: https://docs.docker.com/
+        text: Docker belgeleri
       - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
         text: Azure Stack Hub'dan Azure'a dinamik ölçeklendirme
-      - url: https://labs.iotedge.dev/
-        text: IoT Edge uygulamalı laboratuvarları
-      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-        text: Görüntü AI Geliştirici Seti
-      - url: /visualstudio/azure/
-        text: Visual Studio Azure geliştirme
-    - title: Destek ve diğer kaynaklar
-      links:
-      - url: https://azure.microsoft.com/blog/topics/hybrid/
-        text: Azure hibrit blogu
-      - url: /answers/products/
-        text: Microsoft Soru-Cevap forumları
+      - url: /learn
+        text: Microsoft Learn

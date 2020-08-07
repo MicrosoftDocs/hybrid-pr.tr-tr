@@ -1,5 +1,5 @@
 ### YamlMime:Hub
-title: Azure hibrit bulut belgeleri
+title: Azure hibrit belgeleri
 summary: Küresel buluta, veri merkezine ve uca yayılan hibrit çözümleri oluşturmaya ve çalıştırmaya yönelik kaynaklar.
 brand: azure
 metadata:
@@ -9,13 +9,13 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 06/30/2020
-  ms.openlocfilehash: b888756accc1e538d358e91aec6740b392dafea0
-  ms.sourcegitcommit: 72dbbc933220a4e7273abf46ad3fc6032d122ca7
+  ms.date: 08/05/2020
+  ms.openlocfilehash: 09eca5be0d1b638b1ca5122c12f362ddde8559e8
+  ms.sourcegitcommit: e1bdde91a92840fe1da420148329fee36addc03e
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 07/31/2020
-  ms.locfileid: "87473810"
+  ms.lasthandoff: 08/06/2020
+  ms.locfileid: "87838524"
 highlightedContent:
   items:
   - title: Yeni Azure Stack HCI’ı keşfedin

@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 10cb042e2c6d0c6cb567e14072cd80bc663d686c
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 5ae6c4323324fa104cd0e5c7b5198492be14b8eb
+ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477346"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88886824"
 ---
 # <a name="deploy-an-app-that-scales-cross-cloud-using-azure-and-azure-stack-hub"></a>Azure ve Azure Stack hub kullanarak çapraz bulutu ölçeklendirme bir uygulama dağıtma
 
@@ -35,12 +35,12 @@ Bu çözümde, aşağıdakileri yapmak için bir örnek ortam oluşturacaksını
 > 
 > [Karma uygulama tasarımı ile ilgili önemli noktalar](overview-app-design-considerations.md) , karma uygulamalar tasarlamak, dağıtmak ve çalıştırmak için yazılım kalitesinin (yerleştirme, ölçeklenebilirlik, kullanılabilirlik, dayanıklılık, yönetilebilirlik ve güvenlik) aynı şekilde gözden geçirmeleri inceler. Tasarım konuları karma uygulama tasarımını iyileştirirken, üretim ortamlarındaki zorlukları en aza indirmeyle ilgili olarak size yardımcı olur.
 
-## <a name="prerequisites"></a>Ön koşullar
+## <a name="prerequisites"></a>Önkoşullar
 
 - Azure aboneliği. Gerekirse, başlamadan önce [ücretsiz bir hesap](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) oluşturun.
 - Azure Stack hub tümleşik sistemi veya Azure Stack Geliştirme Seti dağıtımı (ASDK).
   - Azure Stack hub 'ı yüklemeyle ilgili yönergeler için bkz. [ASDK 'Yi yükleme](/azure-stack/asdk/asdk-install.md).
-  - Bir ASDK dağıtım sonrası Otomasyon betiği için şuraya gidin:[https://github.com/mattmcspirit/azurestack](https://github.com/mattmcspirit/azurestack)
+  - Bir ASDK dağıtım sonrası Otomasyon betiği için şuraya gidin: [https://github.com/mattmcspirit/azurestack](https://github.com/mattmcspirit/azurestack)
   - Bu yüklemenin tamamlanabilmesi için birkaç saat gerekebilir.
 - [App Service](/azure-stack/operator/azure-stack-app-service-deploy.md) PaaS hizmetlerini Azure Stack hub 'a dağıtın.
 - Azure Stack hub ortamı içinde [planlar/teklifler oluşturun](/azure-stack/operator/service-plan-offer-subscription-overview.md) .
@@ -68,7 +68,7 @@ Platformlar arası çözüm, ortamlar arasında sorunsuz yönetim ve tanıdık a
 
 ### <a name="get-a-custom-domain-and-configure-dns"></a>Özel etki alanı edinme ve DNS 'yi yapılandırma
 
-Etki alanı için DNS bölge dosyasını güncelleştirin. Azure AD, özel etki alanı adının sahipliğini doğrulayacaktır. Azure 'da Azure/Office 365/dış DNS kayıtları için [Azure DNS](/azure/dns/dns-getstarted-portal) kullanın veya DNS girişini [farklı bir DNS kaydedicisinde](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)ekleyin.
+Etki alanı için DNS bölge dosyasını güncelleştirin. Azure AD, özel etki alanı adının sahipliğini doğrulayacaktır. Azure 'da Azure/Microsoft 365/dış DNS kayıtları için [Azure DNS](/azure/dns/dns-getstarted-portal) kullanın veya DNS girişini [farklı bir DNS kaydedicisinde](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)ekleyin.
 
 1. Özel bir etki alanını ortak bir kayıt defteri ile kaydedin.
 2. Etki alanına ilişkin etki alanı adı kayıt şirketinde oturum açın. DNS güncelleştirmeleri yapmak için onaylanan yönetici gerekli olabilir.

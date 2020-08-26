@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 741ddf2c3ed234788af359dd233f6a656fbea13c
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 27d07070becfa902a715b451baae7c81c7e4b46f
+ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477363"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88886841"
 ---
 # <a name="direct-traffic-with-a-geo-distributed-app-using-azure-and-azure-stack-hub"></a>Azure ve Azure Stack hub kullanarak coğrafi olarak dağıtılmış bir uygulamayla doğrudan trafik
 
@@ -76,7 +76,7 @@ Bu bölümde, bir Web uygulaması oluşturacaksınız.
 > - Uygulamanın yapısını birden çok bulut hedeflerine işaret edin.
 > - CD işlemini yönetin ve yapılandırın.
 
-### <a name="prerequisites"></a>Ön koşullar
+### <a name="prerequisites"></a>Önkoşullar
 
 Bir Azure aboneliği ve Azure Stack hub yüklemesi gereklidir.
 
@@ -84,7 +84,7 @@ Bir Azure aboneliği ve Azure Stack hub yüklemesi gereklidir.
 
 ### <a name="obtain-a-custom-domain-and-configure-dns"></a>Özel etki alanı edinme ve DNS 'yi yapılandırma
 
-Etki alanı için DNS bölge dosyasını güncelleştirin. Daha sonra Azure AD, özel etki alanı adının sahipliğini doğrulayabilirler. Azure 'da Azure/Office 365/dış DNS kayıtları için [Azure DNS](/azure/dns/dns-getstarted-portal) kullanın veya DNS girişini [farklı bir DNS kaydedicisinde](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)ekleyin.
+Etki alanı için DNS bölge dosyasını güncelleştirin. Daha sonra Azure AD, özel etki alanı adının sahipliğini doğrulayabilirler. Azure 'da Azure/Microsoft 365/dış DNS kayıtları için [Azure DNS](/azure/dns/dns-getstarted-portal) kullanın veya DNS girişini [farklı bir DNS kaydedicisinde](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)ekleyin.
 
 1. Özel bir etki alanını ortak bir kayıt defteri ile kaydedin.
 
@@ -248,7 +248,7 @@ Azure DevOps Services, yayınlar için geliştirme, hazırlık, QA ve üretim or
 
 Canlı siteyi ve onun DNS etki alanı adını App Service'e geçirmek için, bkz. [Etkin DNS adını Azure App Service'e geçirme](/azure/app-service/manage-custom-dns-migrate-domain).
 
-### <a name="prerequisites"></a>Ön koşullar
+### <a name="prerequisites"></a>Önkoşullar
 
 Bu çözümü gerçekleştirmek için:
 
@@ -256,7 +256,7 @@ Bu çözümü gerçekleştirmek için:
 
 - Etki alanı adı satın alıp etki alanı sağlayıcısı için DNS kayıt defterine erişim sağlayın.
 
-Etki alanı için DNS bölge dosyasını güncelleştirin. Azure AD, özel etki alanı adının sahipliğini doğrulayacaktır. Azure 'da Azure/Office 365/dış DNS kayıtları için [Azure DNS](/azure/dns/dns-getstarted-portal) kullanın veya DNS girişini [farklı bir DNS kaydedicisinde](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)ekleyin.
+Etki alanı için DNS bölge dosyasını güncelleştirin. Azure AD, özel etki alanı adının sahipliğini doğrulayacaktır. Azure 'da Azure/Microsoft 365/dış DNS kayıtları için [Azure DNS](/azure/dns/dns-getstarted-portal) kullanın veya DNS girişini [farklı bir DNS kaydedicisinde](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)ekleyin.
 
 - Özel bir etki alanını ortak bir kayıt defteri ile kaydedin.
 
@@ -357,7 +357,7 @@ Bu bölümde şunları göndereceğiz:
 > [!Note]  
 > Gerekirse, Azure portal bir müşteri SSL sertifikası alın ve Web uygulamasına bağlayın. Daha fazla bilgi için [App Service sertifikaları öğreticisine](/azure/app-service/web-sites-purchase-ssl-web-site)bakın.
 
-### <a name="prerequisites"></a>Ön koşullar
+### <a name="prerequisites"></a>Önkoşullar
 
 Bu çözümü gerçekleştirmek için:
 
@@ -577,7 +577,7 @@ Uygulama varsayılan olarak, artık sektör standartları ( [PCI DSS](https://wi
 
 2. **Traffic Manager profili**' nde, **Ayarlar** bölümünde **uç noktalar**' ı seçin.
 
-3. **Add (Ekle)** seçeneğini belirleyin.
+3. **Ekle**’yi seçin.
 
 4. Azure Stack hub uç noktası ekleniyor.
 

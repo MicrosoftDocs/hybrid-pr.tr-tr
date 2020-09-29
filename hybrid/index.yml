@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 09/02/2020
-  ms.openlocfilehash: 8109b1b42c133afa3179b362c543118965486ac7
-  ms.sourcegitcommit: 64698a0824c87d0838b57cff05187f4225bb619c
+  ms.openlocfilehash: fe346e09aba6e073f291037eb767a3936dea3a99
+  ms.sourcegitcommit: 1c9d681b45f3cc91fd6896badf998be68e284a35
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 09/24/2020
-  ms.locfileid: "91209714"
+  ms.lasthandoff: 09/28/2020
+  ms.locfileid: "91407727"
 highlightedContent:
   items:
   - title: 'Ignite 2020: Hibrit oturumları'
@@ -263,20 +263,6 @@ conceptualContent:
     - url: /azure/fxt-edge-filer/fxt-overview
       itemType: overview
       text: Azure FXT Edge Filer
-  - title: Araçlar
-    links:
-    - url: /dotnet/azure/
-      itemType: overview
-      text: Azure için .NET geliştirme
-    - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-      itemType: overview
-      text: Görüntü AI Geliştirici Seti
-    - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
-      itemType: overview
-      text: Visual Studio Code için Azure IoT Tools
-    - url: /visualstudio/azure/
-      itemType: overview
-      text: Visual Studio Azure geliştirme
 additionalContent:
   sections:
   - title: Hibrit çözümler
@@ -308,47 +294,113 @@ additionalContent:
         text: Giren müşteri algılama (perakende)
       - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
         text: Coğrafi olarak dağıtılmış uygulama
-  - title: Ek kaynaklar
+  - title: Değerlendirme ve öğrenme kaynakları
     items:
-    - title: Genel
+    - title: Azure Stack
       links:
-      - url: /azure-stack/operator/compare-azure-azure-stack
-        text: Azure küresel bulutu ile Azure Stack’in karşılaştırması
-      - url: https://azure.microsoft.com/blog/topics/hybrid/
-        text: Azure hibrit blogu
-      - url: https://azure.microsoft.com/overview/azure-hybrid/
-        text: Azure hibrit özellikleri
-      - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
-        text: Azure hibrit sanal etkinliği
-      - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
-        text: Müşterilerin Azure Stack Hub çözümleri
-      - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
-        text: Müşterilerin hibrit bulut hikayeleri
-      - url: /answers/products/
-        text: Microsoft Soru-Cevap forumları
-    - title: Değerlendirme ve öğrenme
-      links:
-      - url: https://github.com/likamrat/azure_arc
-        text: Azure Arc hızlı başlangıç kılavuzları
-      - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
-        text: Azure IoT Edge yapay zeka video zekası çözüm hızlandırıcısı
-      - url: https://labs.iotedge.dev/
-        text: Azure IoT Edge uygulamalı laboratuvarları
-      - url: https://www.azureiotsolutions.com/Accelerators
-        text: Azure IoT çözüm hızlandırıcıları
       - url: /azure-stack/asdk
         text: Azure Stack geliştirme seti
       - url: https://github.com/Azure/AzureStackHCI-EvalGuide
         text: Azure Stack HCI gelişim kılavuzu
       - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
         text: Azure Stack hibrit uygulamalara giriş
-      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-        text: Azure IoT Edge cihazları için onaylandı
-      - url: /samples/browse/
-        text: Kod örnekleri tarayıcısı
-      - url: https://docs.docker.com/
-        text: Docker belgeleri
       - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
         text: Azure Stack Hub'dan Azure'a dinamik ölçeklendirme
+    - title: Edge
+      links:
+      - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
+        text: Azure IoT Edge yapay zeka video zekası çözüm hızlandırıcısı
+      - url: https://labs.iotedge.dev/
+        text: Azure IoT Edge uygulamalı laboratuvarları
+      - url: https://www.azureiotsolutions.com/Accelerators
+        text: Azure IoT çözüm hızlandırıcıları
+      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
+        text: Azure IoT Edge cihazları için onaylandı
+    - title: Genel
+      links:
+      - url: /learn/modules/align-requirements-in-azure/
+        text: Azure’da gereksinimleri bulut türleri ve hizmet modelleriyle uyumlu hale getirme
+      - url: https://azure.microsoft.com/overview/azure-hybrid/
+        text: Azure hibrit özellikleri
+      - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
+        text: Azure hibrit sanal etkinliği
+      - url: /learn/modules/intro-to-azure-hybrid-services/
+        text: Azure hibrit buluta giriş
       - url: /learn
         text: Microsoft Learn
+    - title: Kimlik ve güvenlik
+      links:
+      - url: /learn/modules/azure-sentinel-deploy-configure/
+        text: Azure Sentinel'i dağıtma ve veri kaynaklarını bağlama
+      - url: /learn/modules/implement-hybrid-identity-windows-server/
+        text: Windows Server ile hibrit kimlik uygulama
+      - url: /learn/modules/intro-to-azure-sentinel/
+        text: Azure Sentinel’e giriş
+      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+        text: Windows Server hibrit bulut yönetimi, izleme ve güvenlik
+    - title: Yönetim
+      links:
+      - url: https://github.com/likamrat/azure_arc
+        text: Azure Arc hızlı başlangıç kılavuzları
+      - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
+        text: Yüksek kullanılabilirlik ve olağanüstü durum kurtarma stratejileri
+      - url: /learn/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/
+        text: Yüksek kullanılabilirlik ve olağanüstü durum kurtarma için IaaS ve PaaS platformu araçları
+      - url: /learn/modules/intro-to-azure-arc/
+        text: Azure Arc’a giriş
+      - url: /learn/modules/manage-hybrid-workloads-azure-arc/
+        text: Azure Arc ile hibrit iş yüklerini yönetme
+      - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+        text: Windows Server IaaS Sanal Makinelerini ve hibrit örneklerini yönetme
+      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+        text: Windows Server hibrit bulut yönetimi, izleme ve güvenlik
+    - title: Ağ
+      links:
+      - url: /learn/modules/design-a-hybrid-network-architecture/
+        text: Azure'da karma ağ mimarisi tasarlama
+      - url: /learn/modules/expose-hybrid-services-with-azure-relay/
+        text: Azure Relay ile karma hizmetleri güvenle kullanıma sunun
+      - url: /learn/modules/implement-hybrid-network-infrastructure/
+        text: Hibrit ağ altyapısı uygulama
+    - title: Depolama
+      links:
+      - url: /learn/modules/implement-hybrid-file-server-infrastructure/
+        text: Hibrit dosya sunucusu altyapısı uygulama
+      - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+        text: Windows Server IaaS ile hibrit yedekleme ve kurtarma uygulama
+  - title: Ek kaynaklar
+    items:
+    - title: Geliştirici
+      links:
+      - url: /azure/developer/
+        text: Azure geliştirici belgeleri ve araçları
+      - url: /azure/architecture/hybrid/azure-arc-hybrid-config
+        text: Azure hibrit mimarileri
+      - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
+        text: Visual Studio Code için Azure IoT Tools
+      - url: /samples/browse/
+        text: Kod örnekleri tarayıcısı
+      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+        text: Görüntü AI Geliştirici Seti
+      - url: /visualstudio/azure/
+        text: Visual Studio Azure geliştirme
+    - title: Genel
+      links:
+      - url: https://azure.microsoft.com/blog/topics/hybrid/
+        text: Azure hibrit blogu
+      - url: https://azure.microsoft.com/overview/azure-hybrid/
+        text: Azure hibrit özellikleri
+      - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
+        text: Müşterilerin Azure Stack Hub çözümleri
+      - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
+        text: Müşterilerin hibrit bulut hikayeleri
+    - title: Yardım + Destek
+      links:
+      - url: https://azure.microsoft.com/support/options/
+        text: Azure desteği
+      - url: https://feedback.azure.com/
+        text: Azure UserVoice geri bildirimi
+      - url: /answers/products/
+        text: Microsoft Soru-Cevap forumları
+      - url: https://stackoverflow.com/
+        text: Stack Overflow

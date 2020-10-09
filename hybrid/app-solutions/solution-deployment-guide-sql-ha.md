@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 85b859457b9b54a973c5fc23329b927212b60a07
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 2c20d621247ec8e1278feb092586232cc08d5480
+ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477091"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91852482"
 ---
 # <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>Azure ve Azure Stack hub 'a SQL Server 2016 kullanılabilirlik grubu dağıtma
 
@@ -106,5 +106,5 @@ Her dağıtım için Docker görüntüleri farklı Azure PowerShell sürümleri 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - Küme üzerinde el ile yük devretmek için SQL Server Management Studio kullanın. Bkz. [Always on kullanılabilirlik grubunun Zorlanmış El Ile yük devretmesini gerçekleştirme (SQL Server)](/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)
-- Hibrit bulut uygulamaları hakkında daha fazla bilgi edinin. Bkz [. karma bulut çözümleri.](https://aka.ms/azsdevtutorials)
+- Hibrit bulut uygulamaları hakkında daha fazla bilgi edinin. Bkz [. karma bulut çözümleri.](/azure-stack/user/)
 - Kendi verilerinizi kullanın veya [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns)'da bu örnekteki kodu değiştirin.

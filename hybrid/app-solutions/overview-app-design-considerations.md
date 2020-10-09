@@ -7,12 +7,12 @@ ms.date: 06/07/2020
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: c56575ac8ea6cb35d60bb9419269db89b0295721
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 8b975c7b99807490d446f557e84b6e0eabf34649
+ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477227"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91852499"
 ---
 # <a name="hybrid-app-design-considerations"></a>Hibrit uygulama tasarımında dikkat edilmesi gerekenler
 
@@ -51,7 +51,7 @@ Stokunuzda içerilecek ortak uygulama bileşenleri Tablo 1 ' de listelenmiştir.
 | **Bileşen** | **Karma Uygulama Kılavuzu** |
 | ---- | ---- |
 | İstemci bağlantıları | Uygulamanız (herhangi bir cihazda), aşağıdaki yöntemlerle birlikte tek bir giriş noktasından farklı yollarla kullanıcılara erişebilir:<br>-Kullanıcının uygulamayla çalışmak için bir istemcisinin yüklü olmasını gerektiren bir istemci-sunucu modeli. Tarayıcıdan erişilen sunucu tabanlı bir uygulama.<br>-İstemci bağlantıları, dolaşım ücretleri uygulanabileceğini, bağlantı kesildiğinde veya uyarıladığınızda bildirimleri içerebilir. |
-| Kimlik doğrulaması  | Uygulamaya bağlanan bir kullanıcı veya başka bir bileşen için kimlik doğrulaması gerekli olabilir. |
+| Kimlik Doğrulaması  | Uygulamaya bağlanan bir kullanıcı veya başka bir bileşen için kimlik doğrulaması gerekli olabilir. |
 | API'ler  | Geliştiricilere, API kümeleri ve sınıf kitaplıkları ile uygulamanıza programlı erişim sağlayabilir ve internet standartlarına dayalı bir bağlantı arabirimi sağlayabilirsiniz. API 'Leri, bir uygulamayı bağımsız işletim mantıksal birimlerine ayırmak için de kullanabilirsiniz. |
 | Hizmetler  | Bir uygulamaya yönelik özellikleri sağlamak için kısa hizmetlerini kullanabilirsiniz. Bir hizmet, uygulamanın çalıştığı altyapı olabilir. |
 | Kuyruklar | Kullanım ömürlerini ve uygulamanızın bileşenlerinin durumunu düzenlemek için kuyrukları kullanabilirsiniz. Bu kuyruklar, abone tarafların mesajlaşma, bildirim ve arabelleğe alma özelliklerini sağlayabilir. |
@@ -231,4 +231,4 @@ Daha fazla bilgi için aşağıdaki kaynaklara bakın:
 
 - [Hibrit bulut](https://azure.microsoft.com/overview/hybrid-cloud/)
 - [Karma bulut uygulamaları](https://azure.microsoft.com/solutions/hybrid-cloud-app/)
-- [Bulut tutarlılığı için Azure Resource Manager şablonları geliştirme](https://aka.ms/consistency)
+- [Bulut tutarlılığı için Azure Resource Manager şablonları geliştirme](/azure/azure-resource-manager/templates/templates-cloud-consistency)

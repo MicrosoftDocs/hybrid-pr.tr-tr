@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 6de35cb55c4c35a2a9927f9ffc2516ccb00cd89f
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: ecc42a94e2c59531b2a2e933772b0d8ce8c58609
+ms.sourcegitcommit: 0d5b5336bdb969588d0b92e04393e74b8f682c3b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477329"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353487"
 ---
 # <a name="deploy-hybrid-app-with-on-premises-data-that-scales-cross-cloud"></a>Çapraz bulutu ölçeklendirirken şirket içi verilerle karma uygulama dağıtma
 
@@ -37,7 +37,7 @@ Bu öğretici aşağıdaki görevleri kapsar:
 > - Genel Azure ve Azure Stack hub arasında otomatik trafik geçişini yapılandırın.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Karma paragraf diyagramı](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack hub, Azure uzantısıdır. Azure Stack hub, bulut bilgi işlemin çevikliğini ve yeniliklerini şirket içi ortamınıza sunarak, karma uygulamaları her yerde derleyip dağıtmanıza imkan tanıyan tek karma bulutu etkinleştirir.  
 > 
 > [Karma uygulama tasarımı ile ilgili önemli noktalar](overview-app-design-considerations.md) , karma uygulamalar tasarlamak, dağıtmak ve çalıştırmak için yazılım kalitesinin (yerleştirme, ölçeklenebilirlik, kullanılabilirlik, dayanıklılık, yönetilebilirlik ve güvenlik) aynı şekilde gözden geçirmeleri inceler. Tasarım konuları karma uygulama tasarımını iyileştirirken, üretim ortamlarındaki zorlukları en aza indirmeyle ilgili olarak size yardımcı olur.
@@ -153,7 +153,7 @@ Azure 'daki Web ön ucu ve Azure Stack hub 'ında SQL Server veritabanı arasın
 
 Karma ağın Azure tarafındaki sanal ağ geçidi, Azure App Service ile tümleştirilecek Noktadan siteye bağlantılara izin vermelidir.
 
-1. Azure 'da sanal ağ geçidi sayfasına gidin. **Ayarlar**' ın altında, **Noktadan siteye yapılandırma**' yı seçin.
+1. Azure portal sanal ağ geçidi sayfasına gidin. **Ayarlar**' ın altında, **Noktadan siteye yapılandırma**' yı seçin.
 
     ![Azure sanal ağ geçidinde Noktadan siteye seçeneği](media/solution-deployment-guide-hybrid/image8.png)
 
@@ -192,7 +192,7 @@ App Service Azure sanal ağları ile tümleştirme hakkında daha fazla bilgi ed
 
 Azure Stack hub sanal ağındaki yerel ağ geçidinin, trafiği App Service Noktadan siteye adres aralığından yönlendirmek üzere yapılandırılması gerekir.
 
-1. Azure Stack hub 'ında **yerel ağ geçidi**' ne gidin. **Ayarlar** bölümünde **Yapılandırma**‘yı seçin.
+1. Azure Stack hub portalında **yerel ağ geçidi**' ne gidin. **Ayarlar** bölümünde **Yapılandırma**‘yı seçin.
 
     ![Azure Stack Merkezi yerel ağ geçidinde ağ geçidi yapılandırma seçeneği](media/solution-deployment-guide-hybrid/image14.png)
 
@@ -238,13 +238,13 @@ Azure 'a SSL eklemek için:
 
 1. Aldığınız SSL sertifikasının oluşturduğunuz alt etki alanı için geçerli olduğundan emin olun. (Joker karakter sertifikaları kullanmak normaldir.)
 
-2. Azure 'da, **Web uygulamanızı hazırlama** ve [var olan özel bir SSL sertifikasını Azure 'a](/azure/app-service/app-service-web-tutorial-custom-ssl) **bağlama bölümündeki** yönergeleri izleyin Web Apps makalesine gidin. **SSL türü**olarak **SNı tabanlı SSL** ' yi seçin.
+2. Azure portal, **Web uygulamanızı hazırlama** ve [var olan özel bir SSL sertifikasını Azure 'a](/azure/app-service/app-service-web-tutorial-custom-ssl) **bağlama bölümündeki** yönergeleri izleyin Web Apps makalesine gidin. **SSL türü**olarak **SNı tabanlı SSL** ' yi seçin.
 
 3. Tüm trafiği HTTPS bağlantı noktasına yönlendir. [Var olan bir özel SSL sertifikası 'nı Web Apps Azure 'A bağlama](/azure/app-service/app-service-web-tutorial-custom-ssl) makalesindeki **https 'yi zorla** bölümünde bulunan yönergeleri izleyin.
 
 Azure Stack hub 'ına SSL eklemek için:
 
-1. Azure için kullandığınız 1-3 adımlarını yineleyin.
+1. Azure Stack hub portalını kullanarak Azure için kullandığınız 1-3 adımları yineleyin.
 
 ## <a name="configure-and-deploy-the-web-app"></a>Web uygulamasını yapılandırma ve dağıtma
 
@@ -300,7 +300,7 @@ Web uygulamanızı bir App Service ortamında oluşturduğunuzda, tek bir örnek
 
 ### <a name="enable-automatic-scale-out"></a>Otomatik ölçeklendirmeyi etkinleştir
 
-1. Azure 'da, genişletmek istediğiniz siteler için App Service planı bulun ve ardından **genişleme (App Service planı)** öğesini seçin.
+1. Azure portal, genişletmek istediğiniz siteler için App Service planı bulun ve ardından **genişleme (App Service planı)** öğesini seçin.
 
     ![Ölçeği genişletme Azure App Service](media/solution-deployment-guide-hybrid/image16.png)
 
@@ -335,7 +335,7 @@ Web uygulamanızı bir App Service ortamında oluşturduğunuzda, tek bir örnek
 
 3. **Cool tuşuna** **5**olarak ayarlayın.
 
-4. **Add (Ekle)** seçeneğini belirleyin.
+4. **Ekle**’yi seçin.
 
 5. **+ Kural Ekle**' yi seçin.
 
@@ -368,11 +368,11 @@ Trafik azaldıkça Azure Web uygulaması, maliyetleri azaltmak için etkin örne
    - **Örnek sayısını** **1**olarak ayarlayın.
    - **Cool tuşuna** **5**olarak ayarlayın.
 
-2. **Add (Ekle)** seçeneğini belirleyin.
+2. **Ekle**’yi seçin.
 
 ## <a name="create-a-traffic-manager-profile-and-configure-cross-cloud-scaling"></a>Traffic Manager profili oluşturma ve platformlar arası ölçeklendirmeyi yapılandırma
 
-Azure 'da bir Traffic Manager profili oluşturun ve sonra da platformlar arası ölçeklendirmeyi etkinleştirmek için uç noktaları yapılandırın.
+Azure portal kullanarak bir Traffic Manager profili oluşturun ve sonra platformlar arası ölçeklendirmeyi etkinleştirmek için uç noktaları yapılandırın.
 
 ### <a name="create-traffic-manager-profile"></a>Traffic Manager profili oluşturma
 
@@ -398,7 +398,7 @@ Azure 'da bir Traffic Manager profili oluşturun ve sonra da platformlar arası 
 
 2. **Traffic Manager profilinde**, **Ayarlar**altında **uç noktalar**' ı seçin.
 
-3. **Add (Ekle)** seçeneğini belirleyin.
+3. **Ekle**’yi seçin.
 
 4. **Uç nokta Ekle**' de Azure Stack Hub için aşağıdaki ayarları kullanın:
 
@@ -413,7 +413,7 @@ Azure 'da bir Traffic Manager profili oluşturun ve sonra da platformlar arası 
 Sonraki Azure uç noktasını yapılandıracaksınız.
 
 1. **Traffic Manager profilinde** **uç noktalar**' ı seçin.
-2. **+ Ekle**' yi seçin.
+2. **+Ekle**’yi seçin.
 3. **Uç nokta Ekle**sayfasında Azure için aşağıdaki ayarları kullanın:
 
    - **Tür**için **Azure uç noktası**' nı seçin.
@@ -430,15 +430,15 @@ Her iki uç nokta yapılandırıldıktan sonra, **uç noktalar**' ı seçerken *
 
 ![Traffic Manager profilindeki uç noktalar](media/solution-deployment-guide-hybrid/image20.png)
 
-## <a name="set-up-application-insights-monitoring-and-alerting"></a>Application Insights izlemeyi ve uyarı ayarlamayı ayarlama
+## <a name="set-up-application-insights-monitoring-and-alerting-in-azure"></a>Azure 'da Application Insights izlemeyi ve uyarı ayarlamayı ayarlama
 
 Azure Application Insights, uygulamanızı izlemenizi ve yapılandırdığınız koşullara göre uyarı göndermenizi sağlar. Bazı örnekler şunlardır: uygulama kullanılamıyor, hatalarla karşılaşıyor veya performans sorunlarını gösteriyor.
 
-Uyarı oluşturmak için Application Insights ölçümleri kullanacaksınız. Bu uyarılar tetiklenmesi durumunda, Web uygulamanızın örneği ölçeği genişletmek için otomatik olarak Azure Stack hub 'dan Azure 'a geçiş yapar ve sonra ölçeklendirmek üzere Azure Stack hub 'a geri yüklenir.
+Uyarı oluşturmak için Azure Application Insights ölçümlerini kullanacaksınız. Bu uyarılar tetiklenmesi durumunda, Web uygulamanızın örneği ölçeği genişletmek için otomatik olarak Azure Stack hub 'dan Azure 'a geçiş yapar ve sonra ölçeklendirmek üzere Azure Stack hub 'a geri yüklenir.
 
 ### <a name="create-an-alert-from-metrics"></a>Ölçülerden uyarı oluşturma
 
-Bu öğretici için kaynak grubuna gidin ve **Application Insights**açmak için Application Insights örneğini seçin.
+Azure portal, Bu öğreticinin kaynak grubuna gidin ve **Application Insights**açmak için Application Insights örneğini seçin.
 
 ![Application Insights](media/solution-deployment-guide-hybrid/image21.png)
 

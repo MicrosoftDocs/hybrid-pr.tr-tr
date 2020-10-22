@@ -10,14 +10,17 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 09/02/2020
-  ms.openlocfilehash: fe346e09aba6e073f291037eb767a3936dea3a99
-  ms.sourcegitcommit: 1c9d681b45f3cc91fd6896badf998be68e284a35
+  ms.openlocfilehash: 66e51bad731b1235937d7cfa341153809307e151
+  ms.sourcegitcommit: 5631ed6b17942bf893e2dbad07d4aba274de8262
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 09/28/2020
-  ms.locfileid: "91407727"
+  ms.lasthandoff: 10/21/2020
+  ms.locfileid: "92334247"
 highlightedContent:
   items:
+  - title: Azure Modüler Veri Merkezi’ne giriş
+    itemType: video
+    url: https://azure.microsoft.com/blog/introducing-the-microsoft-azure-modular-datacenter/
   - title: 'Ignite 2020: Hibrit oturumları'
     itemType: video
     url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=hybrid
@@ -27,9 +30,6 @@ highlightedContent:
   - title: 'Ignite 2020: Akıllı Uç oturumları'
     itemType: video
     url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q="intelligent edge"
-  - title: Yeni Azure Stack HCI’ı keşfedin
-    itemType: video
-    url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/
   - title: 'Inspire 2020: Azure Stack HCI’daki yenilikler'
     itemType: video
     url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
@@ -54,9 +54,11 @@ productDirectory:
   - title: Barındırılan, şirket içi ve mobil veri merkezleri için özel bulut platformları.
     imageSrc: media/index/azure-stack-hub.svg
     links:
-    - url: /azure-stack/operator
+    - url: /azure-stack#azure-stack-hub
       text: Azure Stack Hub
-    - url: /azure-stack/hci
+    - url: /azure-stack#azure-stack-hub
+      text: Azure Modüler Veri Merkezi
+    - url: /azure-stack#azure-stack-hci
       text: Azure Stack HCI
   - title: Cihazlar için akıllı uç platformları.
     imageSrc: media/index/intelligent.svg

@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 09/02/2020
-  ms.openlocfilehash: 66e51bad731b1235937d7cfa341153809307e151
-  ms.sourcegitcommit: 5631ed6b17942bf893e2dbad07d4aba274de8262
+  ms.openlocfilehash: 823d9f2f8823c47854647ce378c6866978df7feb
+  ms.sourcegitcommit: 6be3914e28349883dba004697dc550a6fd1b7393
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 10/21/2020
-  ms.locfileid: "92334247"
+  ms.lasthandoff: 10/30/2020
+  ms.locfileid: "93062925"
 highlightedContent:
   items:
   - title: Azure Modüler Veri Merkezi’ne giriş
@@ -138,6 +138,9 @@ conceptualContent:
     - url: /azure/azure-functions/
       itemType: overview
       text: Azure İşlevleri
+    - url: /azure/iot-hub/
+      itemType: overview
+      text: Azure IoT Hub
     - url: /azure/logic-apps/
       itemType: overview
       text: Azure Logic Apps
@@ -147,9 +150,12 @@ conceptualContent:
     - url: /azure/service-fabric/
       itemType: overview
       text: Azure Service Fabric
-    - url: /azure-stack/operator/event-hubs-rp-overview
+    - url: /azure-stack/user/event-hubs-overview
       itemType: overview
       text: Azure Stack Hub üzerinde Event Hubs
+    - url: /azure-stack/user/iot-hub-overview
+      itemType: overview
+      text: Azure Stack Hub üzerindeki IoT Hub
   - title: Edge
     links:
     - url: /azure/databox-online/data-box-gateway-overview

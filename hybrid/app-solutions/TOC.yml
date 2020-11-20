@@ -1,8 +1,8 @@
-- name: Azure Hibrit Belgeleri
+- name: Hibrit ve çoklu bulut çözümleri belgeleri
   href: index.yml
 - name: Genel Bakış
   items:
-    - name: Hibrit desenler ve çözüm örnekleri
+    - name: Desenler ve çözüm örnekleri
       href: overview-patterns-solution-examples.md
 - name: Desenler
   items:
@@ -58,7 +58,7 @@
       href: 'https://aka.ms/edgetrainingdeploy'
 - name: Kavramlar
   items:
-    - name: Hibrit uygulama tasarımında dikkat edilmesi gerekenler
+    - name: Uygulama tasarımında dikkat edilecek noktalar
       href: overview-app-design-considerations.md
 - name: İlgili
   items:

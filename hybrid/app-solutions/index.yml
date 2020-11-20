@@ -1,32 +1,32 @@
 ### YamlMime:Landing
-title: Azure hibrit desenleri ve çözüm belgeleri
-summary: Uygulama geliştirmenizde hibrit desenler ve çözüm örneklerinden nasıl yararlanabileceğinizi öğrenin. Azure ve Azure Stack, bir akıllı bulut ve akıllı uç hizmetleri paketi üzerinde hibrit uygulamalar geliştirmeye olanak tanır.
+title: Azure hibrit ve çoklu bulut desenleri ve çözüm belgeleri
+summary: Uygulamanızı geliştirirken hibrit ve çoklu bulut desenlerini ve çözüm örneklerinden nasıl faydalanacağınızı öğrenin, akıllı bulut ve akıllı uç hizmetlerinden oluşan bir paketle uygulama geliştirin.
 metadata:
-  title: Azure hibrit desenleri ve çözüm belgeleri
-  description: Uygulama geliştirmenizde hibrit desenler ve çözüm örneklerinden nasıl yararlanabileceğinizi öğrenin. Azure ve Azure Stack, bir akıllı bulut ve akıllı uç hizmetleri paketi üzerinde hibrit uygulamalar geliştirmeye olanak tanır.
+  title: Azure hibrit ve çoklu bulut desenleri ve çözüm belgeleri
+  description: Uygulamanızı geliştirirken hibrit ve çoklu bulut desenlerini ve çözüm örneklerinden nasıl faydalanacağınızı öğrenin, akıllı bulut ve akıllı uç hizmetlerinden oluşan bir paketle uygulama geliştirin.
   ms.service: azure-stack
   ms.topic: landing-page
   author: BryanLa
   ms.author: bryanla
   ms.date: 10/31/2019
-  ms.openlocfilehash: 923e8aa2af78b5d23ba1f25d8b0eb5b80edc4f0a
-  ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+  ms.openlocfilehash: f51256c555011744f847e457b8bac46a1b5c4b14
+  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 06/17/2020
-  ms.locfileid: "84909766"
+  ms.lasthandoff: 11/18/2020
+  ms.locfileid: "94872996"
 landingContent:
-- title: Hibrit desenler ve çözümler hakkında
+- title: Hibrit ve çoklu bulut desenleri ve çözümleri hakkında
   linkLists:
   - linkListType: overview
     links:
-    - text: Hibrit desenler ve çözüm örnekleri nelerdir?
+    - text: Desenler ve çözüm örnekleri nelerdir?
       url: overview-patterns-solution-examples.md
   - linkListType: concept
     links:
-    - text: Hibrit uygulama tasarımında dikkat edilmesi gerekenler
+    - text: Uygulama tasarımında dikkat edilecek noktalar
       url: overview-app-design-considerations.md
-- title: Hibrit desenleri keşfetme
+- title: Hibrit ve çoklu bulut desenlerini keşfetme
   linkLists:
   - linkListType: architecture
     links:
@@ -38,7 +38,7 @@ landingContent:
       url: pattern-retail-footfall-detection.md
     - text: Coğrafi olarak dağıtılmış uygulama
       url: pattern-geo-distributed.md
-- title: Hibrit çözüm örneklerini dağıtma
+- title: Hibrit ve çoklu bulut çözüm örnekleri dağıtma
   linkLists:
   - linkListType: tutorial
     links:

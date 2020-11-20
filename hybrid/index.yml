@@ -1,21 +1,21 @@
 ### YamlMime:Hub
-title: Azure hibrit belgeleri
-summary: Küresel buluta, veri merkezine ve uca yayılan hibrit çözümleri oluşturmaya ve çalıştırmaya yönelik kaynaklar.
+title: Azure hibrit ve çoklu bulut belgeleri
+summary: Küresel buluta, veri merkezine ve uca yayılan hibrit ve çoklu bulut çözümleri oluşturmaya ve çalıştırmaya yönelik kaynaklar.
 brand: azure
 metadata:
-  title: Azure hibrit bulut belgeleri
-  description: Küresel buluta, veri merkezine ve uca yayılan hibrit çözümleri oluşturmaya ve çalıştırmaya yönelik kaynaklar.
+  title: Azure hibrit ve çoklu buluta yönelik bulut belgeleri
+  description: Küresel buluta, veri merkezine ve uca yayılan hibrit ve çoklu bulut çözümleri oluşturmaya ve çalıştırmaya yönelik kaynaklar.
   ms.service: multiple
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 09/02/2020
-  ms.openlocfilehash: 823d9f2f8823c47854647ce378c6866978df7feb
-  ms.sourcegitcommit: 6be3914e28349883dba004697dc550a6fd1b7393
+  ms.date: 11/16/2020
+  ms.openlocfilehash: 23c1d6e1444e637a8e012b2628d3dfbafe903b3e
+  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 10/30/2020
-  ms.locfileid: "93062925"
+  ms.lasthandoff: 11/18/2020
+  ms.locfileid: "94873032"
 highlightedContent:
   items:
   - title: Azure Modüler Veri Merkezi’ne giriş
@@ -43,8 +43,8 @@ highlightedContent:
     itemType: video
     url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
 productDirectory:
-  title: Azure hibrit bulut platformu
-  summary: Hibrit çözümleri oluşturmak ve çalıştırmak için kullanılan hibrit özellikli platformlar.
+  title: Azure hibrit ve çoklu bulut platformu
+  summary: Hibrit ve çoklu bulut çözümleri oluşturmak ve çalıştırmak için kullanılan platformlar.
   items:
   - title: Azure küresel genel/bağımsız bulut platformu.
     imageSrc: media/index/logo_azure.svg
@@ -70,8 +70,8 @@ productDirectory:
     - url: /windows/iot-core/
       text: IoT için Windows
 conceptualContent:
-  title: Hibrit etkinleştirme teknolojileri
-  summary: Hibrit çözümler oluşturmaya ve çalıştırmaya yönelik hizmetler ve ürünler.
+  title: Hibrit ve çoklu bulut teknolojileri
+  summary: Hibrit ve çoklu bulut çözümleri oluşturmaya ve çalıştırmaya yönelik hizmetler ve ürünler.
   items:
   - title: Yapay Zeka ve Makine Öğrenmesi
     links:
@@ -155,7 +155,7 @@ conceptualContent:
       text: Azure Stack Hub üzerinde Event Hubs
     - url: /azure-stack/user/iot-hub-overview
       itemType: overview
-      text: Azure Stack Hub üzerindeki IoT Hub
+      text: Azure Stack Hub üzerindeki IoT Hub (önizleme)
   - title: Edge
     links:
     - url: /azure/databox-online/data-box-gateway-overview
@@ -164,6 +164,9 @@ conceptualContent:
     - url: /azure/iot-edge/
       itemType: overview
       text: Azure IoT Edge
+    - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
+      itemType: overview
+      text: Kubernetes üzerinde Azure IoT Edge
     - url: /azure-sphere
       itemType: overview
       text: Azure Sphere
@@ -173,9 +176,6 @@ conceptualContent:
     - url: /azure/azure-sql-edge/overview
       itemType: overview
       text: Uç Cihazlar için Azure SQL (önizleme)
-    - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
-      itemType: overview
-      text: Kubernetes üzerinde IoT Edge
     - url: /windows/iot-core/
       itemType: overview
       text: IoT için Windows
@@ -273,16 +273,16 @@ conceptualContent:
       text: Azure FXT Edge Filer
 additionalContent:
   sections:
-  - title: Hibrit çözümler
-    summary: Hibrit projelerinizde kullanmak üzere inceleyebileceğiniz rehberler ve örnekler.
+  - title: Hibrit ve çoklu bulut çözümleri
+    summary: Hibrit ve çoklu bulut projelerinizde kullanmak üzere inceleyebileceğiniz rehberler ve örnekler.
     items:
-    - title: Hibrit uygulama desenleri ve çözüm örnekleri
+    - title: Uygulama desenleri ve çözüm örnekleri
       links:
       - url: ./app-solutions/overview-patterns-solution-examples.md
         text: Desenler ve çözüm örnekleri nelerdir?
       - url: ./app-solutions/overview-app-design-considerations.md
-        text: Hibrit uygulama tasarımında dikkat edilmesi gerekenler
-    - title: Hibrit uygulama desenlerini keşfetme
+        text: Uygulama tasarımında dikkat edilecek noktalar
+    - title: Uygulama desenlerini keşfetme
       links:
       - url: ./app-solutions/pattern-cross-cloud-scale.md
         text: Bulutlar arası ölçeklendirme
@@ -292,7 +292,7 @@ additionalContent:
         text: Giren müşteri algılama (perakende)
       - url: ./app-solutions/pattern-geo-distributed.md
         text: Coğrafi olarak dağıtılmış uygulama
-    - title: Hibrit uygulama çözümü örneklerini dağıtma
+    - title: Uygulama çözümü örneklerini dağıtma
       links:
       - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
         text: Bulutlar arası ölçeklendirme

@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 5f2e18e164e54f60b1bb7a14026a0c75c7d7ce69
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 2177b32474dea695967e197acbd4bc1e18422d7b
+ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477176"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96901499"
 ---
 # <a name="deploy-an-ai-based-footfall-detection-solution-using-azure-and-azure-stack-hub"></a>Azure ve Azure Stack hub kullanarak bir AI tabanlı bir kantfall algılama çözümü dağıtma
 
@@ -26,12 +26,12 @@ Bu çözümde şunları yapmayı öğreneceksiniz:
 > - Kenardaki çıkarım için Özel Görüntü İşleme AI geliştirme setini kullanın.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Karma paragraf diyagramı](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack hub, Azure uzantısıdır. Azure Stack hub, bulut bilgi işlemin çevikliğini ve yeniliklerini şirket içi ortamınıza sunarak, karma uygulamaları her yerde derleyip dağıtmanıza imkan tanıyan tek karma bulutu etkinleştirir.  
 > 
 > [Karma uygulama tasarımı ile ilgili önemli noktalar](overview-app-design-considerations.md) , karma uygulamalar tasarlamak, dağıtmak ve çalıştırmak için yazılım kalitesinin (yerleştirme, ölçeklenebilirlik, kullanılabilirlik, dayanıklılık, yönetilebilirlik ve güvenlik) aynı şekilde gözden geçirmeleri inceler. Tasarım konuları karma uygulama tasarımını iyileştirirken, üretim ortamlarındaki zorlukları en aza indirmeyle ilgili olarak size yardımcı olur.
 
-## <a name="prerequisites"></a>Ön koşullar
+## <a name="prerequisites"></a>Önkoşullar
 
 Bu dağıtım kılavuzunu kullanmaya başlamadan önce şunları yaptığınızdan emin olun:
 
@@ -44,7 +44,7 @@ Bu dağıtım kılavuzunu kullanmaya başlamadan önce şunları yaptığınızd
 - Dizininizde iki hizmet sorumlusu oluşturun:
   - Azure abonelik kapsamında erişim ile Azure kaynaklarıyla kullanılmak üzere ayarlanmış bir.
   - Azure Stack hub kaynaklarıyla kullanılmak üzere, Azure Stack hub aboneliği kapsamında erişimli bir kurulum.
-  - Hizmet sorumluları oluşturma ve erişimi yetkilendirme hakkında daha fazla bilgi edinmek için bkz. [kaynaklara erişmek için uygulama kimliği kullanma](/azure-stack/operator/azure-stack-create-service-principals.md). Azure CLı 'yı kullanmayı tercih ediyorsanız bkz. Azure [CLI Ile Azure hizmet sorumlusu oluşturma](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
+  - Hizmet sorumluları oluşturma ve erişimi yetkilendirme hakkında daha fazla bilgi edinmek için bkz. [kaynaklara erişmek için uygulama kimliği kullanma](/azure-stack/operator/azure-stack-create-service-principals.md). Azure CLı 'yı kullanmayı tercih ediyorsanız bkz. Azure [CLI Ile Azure hizmet sorumlusu oluşturma](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&preserve-view=true).
 - Azure bilişsel hizmetler 'i Azure 'da veya Azure Stack hub 'da dağıtın.
   - İlk olarak bilişsel [Hizmetler hakkında daha fazla bilgi edinin](https://azure.microsoft.com/services/cognitive-services/).
   - Daha sonra, Azure bilişsel [Hizmetler 'i Azure Stack hub 'A dağıtmayı](/azure-stack/user/azure-stack-solution-template-cognitive-services.md) , bilişsel hizmetler 'ı Azure Stack hub 'a dağıtmak Önce önizlemeye erişim için kaydolmanız gerekir.
@@ -56,7 +56,7 @@ Bu dağıtım kılavuzunu kullanmaya başlamadan önce şunları yaptığınızd
   - [Docker CE](https://hub.docker.com/search/?type=edition&offering=community)
   - [Porter](https://porter.sh/). Sizin için sağlanmış olan CNAB paket bildirimlerini kullanarak bulut uygulamalarını dağıtmak için bağlantı noktası kullanırsınız.
   - [Visual Studio Code](https://code.visualstudio.com/)
-  - [Visual Studio Code için Azure IoT araçları](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools)
+  - [Visual Studio Code için Azure IoT Tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools)
   - [Visual Studio Code için Python uzantısı](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
   - [Python](https://www.python.org/)
 
@@ -152,7 +152,7 @@ Bir kimlik bilgisi kümesi oluşturmak için Porter CLı 'sını kullanın, ard�
 
 Artık veriler kameradan Azure Stream Analytics akar, Power BI ile iletişim kurmak için el ile yetkilendirmeniz gerekir.
 
-1. Azure portal, **tüm kaynaklar**' ı ve *Process-mtfall \[ yoursuffix \] * işini açın.
+1. Azure portal, **tüm kaynaklar**' ı ve *Process-mtfall \[ yoursuffix \]* işini açın.
 
 2. Stream Analytics iş bölmesinin **İş Topolojisi** bölümünde **Çıkışlar** seçeneğini belirleyin.
 
@@ -174,7 +174,7 @@ Artık veriler kameradan Azure Stream Analytics akar, Power BI ile iletişim kur
 
 2. Power BI çalışma alanınızdan, *Ptfall Analizi* adlı yeni bir pano oluşturmak Için **+ Oluştur** ' u seçin.
 
-3. Pencerenin üst kısmındaki **Kutucuk ekle**’yi seçin. Ardından **Özel Akış Verileri**'ni ve **İleri**'yi seçin. **Veri kümeleriniz**altındaki alt **veri kümesini** seçin. **Görselleştirme türü** açılan menüsünden **kart** ' ı seçin ve alanlara **yaş** ekleyin **Fields**. **İleri**'yi seçip ad belirledikten sonra **Uygula**'yı seçerek kutucuğu oluşturun.
+3. Pencerenin üst kısmındaki **Kutucuk ekle**’yi seçin. Ardından **Özel Akış Verileri**'ni ve **İleri**'yi seçin. **Veri kümeleriniz** altındaki alt **veri kümesini** seçin. **Görselleştirme türü** açılan menüsünden **kart** ' ı seçin ve alanlara **yaş** ekleyin **Fields**. **İleri**'yi seçip ad belirledikten sonra **Uygula**'yı seçerek kutucuğu oluşturun.
 
 4. İstediğiniz gibi ek alanlar ve kartlar ekleyebilirsiniz.
 
@@ -194,5 +194,5 @@ porter uninstall footfall-camera –tag intelligentedge/footfall-camera-deployme
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Karma uygulama tasarımı konuları] hakkında daha fazla bilgi edinin. (overview-app-design-considerations.md)
+- [Karma uygulama tasarımı konuları](overview-app-design-considerations.md) hakkında daha fazla bilgi edinin
 - [GitHub 'da Bu örnek için koda](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/footfall-analysis)yönelik geliştirmeleri gözden geçirin ve önerin.

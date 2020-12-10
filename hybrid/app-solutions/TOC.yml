@@ -26,6 +26,8 @@
           href: pattern-cross-cloud-scale-onprem-data.md
         - name: Giren müşteri algılama (perakende)
           href: pattern-retail-footfall-detection.md
+        - name: Yüksek oranda kullanılabilirlik özellikli Kubernetes kümesi
+          href: pattern-highly-available-kubernetes.md
         - name: Uçta tükenen stok algılama
           href: pattern-out-of-stock-at-edge.md
 - name: Çözüm dağıtımı kılavuzları
@@ -40,6 +42,8 @@
       href: solution-deployment-guide-retail-footfall-detection.md
     - name: Coğrafi olarak dağıtılmış uygulama
       href: solution-deployment-guide-geo-distributed.md
+    - name: Yüksek oranda kullanılabilirlik özellikli Kubernetes kümesi
+      href: solution-deployment-guide-highly-available-kubernetes.md
     - name: Karma bağlantı
       href: solution-deployment-guide-connectivity.md
     - name: Karma kimlik

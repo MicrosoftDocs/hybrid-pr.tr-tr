@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 11/16/2020
-  ms.openlocfilehash: 23c1d6e1444e637a8e012b2628d3dfbafe903b3e
-  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
+  ms.openlocfilehash: 2ca6a085610915882ad4d875b97b6f9ab53b1ed2
+  ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 11/18/2020
-  ms.locfileid: "94873032"
+  ms.lasthandoff: 12/09/2020
+  ms.locfileid: "96901533"
 highlightedContent:
   items:
   - title: Azure Modüler Veri Merkezi’ne giriş
@@ -292,6 +292,8 @@ additionalContent:
         text: Giren müşteri algılama (perakende)
       - url: ./app-solutions/pattern-geo-distributed.md
         text: Coğrafi olarak dağıtılmış uygulama
+      - url: ./app-solutions/pattern-highly-available-kubernetes.md
+        text: Yüksek oranda kullanılabilir Kubernetes kümesi
     - title: Uygulama çözümü örneklerini dağıtma
       links:
       - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
@@ -302,6 +304,8 @@ additionalContent:
         text: Giren müşteri algılama (perakende)
       - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
         text: Coğrafi olarak dağıtılmış uygulama
+      - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
+        text: Yüksek oranda kullanılabilir Kubernetes kümesi
   - title: Değerlendirme ve öğrenme kaynakları
     items:
     - title: Azure Stack

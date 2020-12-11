@@ -7,14 +7,14 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 2c20d621247ec8e1278feb092586232cc08d5480
-ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
+ms.openlocfilehash: 0f857515a44ece7f967ade3dee8f493481709851
+ms.sourcegitcommit: c890f2c5e5e5f9f93c921f02dd1a6ca5026d5289
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91852482"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97091811"
 ---
-# <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>Azure ve Azure Stack hub 'a SQL Server 2016 kullanılabilirlik grubu dağıtma
+# <a name="deploy-a-sql-server-2016-availability-group-across-two-azure-stack-hub-environments"></a>İki Azure Stack hub ortamında SQL Server 2016 kullanılabilirlik grubu dağıtma
 
 Bu makalede, iki Azure Stack hub ortamında zaman uyumsuz olağanüstü durum kurtarma (DR) sitesiyle temel yüksek kullanılabilirliğe sahip (HA) SQL Server 2016 kurumsal kümesinin otomatik dağıtımı adım adım gösterilir. SQL Server 2016 ve yüksek kullanılabilirlik hakkında daha fazla bilgi edinmek için bkz. [Always on kullanılabilirlik grupları: yüksek kullanılabilirlik ve olağanüstü durum kurtarma çözümü](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
 
